@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import logo from './img/logo.png';
+
+import Header from './header';
 
 class Slider extends Component {
     render() {
         return (            
             <div>
+                <Header/>
                 <article>
-                    <section className="home">
-                        <img src={ logo } alt="logo" className="logo-app"/>
+                    <section className="home">                        
                         <h1><b>AP Advocates</b><br/>
                             A proud Indonesian Intellectual Property Firm<br/>
                             that is committed to deliver world-class<br/>
@@ -40,8 +41,7 @@ class Slider extends Component {
                 <article>
                     <section className="home2">
                          <dt className="languange">
-                            <a href="id"><span><img src="img/id.svg" className="language-img" alt="" /></span></a>
-                            <a href="en"><span><img src="img/us.svg" className="language-img" alt="" /></span></a>
+                           
                         </dt>
                     </section>
                     <section className="shortcut">

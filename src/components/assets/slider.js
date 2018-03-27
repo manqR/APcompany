@@ -1,13 +1,20 @@
 import React, { Component } from 'react';
-
 import Header from './header';
+import Profile from './profile';
+import ProfileTxt from './profile-txt';
+import Team from './team';
+import TeamTxt from './team-txt';
 
 class Slider extends Component {
     render() {
         return (            
             <div>
                 <Header/>
+
+
+                 {/* BEGIN LEFT SIDE PRATICE */}
                 <article>
+
                     <section className="home">                        
                         <h1><b>AP Advocates</b><br/>
                             A proud Indonesian Intellectual Property Firm<br/>
@@ -15,53 +22,31 @@ class Slider extends Component {
                             Intellectual Property service.
                         </h1>
                     </section>
-
-                    <section className="practice">
-                        <table>
-                            <tr>
-                                <td>
-                                    <h1>Practice</h1>
-                                    <fieldset>
-                                        <a data="practice/index.html">PRACTICE</a>
-                                        <a data="practices/non-contentious-prosecution/index.html">NON-CONTENTIOUS (PROSECUTION)</a>
-                                        <a data="practices/contentious-ip-litigationenforcement/index.html">CONTENTIOUS &#8211; IP LITIGATION/ENFORCEMENT</a>
-                                        <a data="practices/technology-media-telecommunication/index.html">TECHNOLOGY, MEDIA &#038; TELECOMMUNICATION</a>
-                                        <a data="practices/general-corporate/index.html">GENERAL CORPORATE</a>
-                                        <a data="practices/arbitration-dispute-resolution-practice/index.html">ARBITRATION &#038; DISPUTE RESOLUTION PRACTICE</a>	    
-                                    </fieldset>
-                                </td>
-                            </tr>
-                        </table>
-                    </section>
+                   
+                    <Profile />
+                    <TeamTxt />
+                    
                 </article>
+                {/* END LEFT SIDE PRATICE */}
 
 
 
-                {/* RIGHT SIDE PRATICE */}
+
+                {/* BEGIN RIGHT SIDE PRATICE */}
                 <article>
+
                     <section className="home2">
                          <dt className="languange">
                            
                         </dt>
                     </section>
-                    <section className="shortcut">
-                        <table>
-                            <tr>
-                                <td>
-                                    <a href="#profile">Profile &rarr;</a>
-                                    <h6>Specializes in Providing Services<br/>Accross The Entire Spectrum of IP</h6>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="#practice">Practice &rarr;</a>
-                                    <h6>Provide Legal Service Accross<br/>All Aspects of Indonesian<br/>Commercial &amp; Corporate Law</h6>
-                                </td>
-                            </tr>
-                        </table>
-                    </section>
-                
+
+                    <ProfileTxt />
+                    <Team />
+                    
                 </article>
+                {/* END RIGHT SIDE PRATICE */}
+
             </div>
                 
         );

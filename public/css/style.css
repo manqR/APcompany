@@ -1,4 +1,27 @@
-*{background:0;margin:0;padding:0;border:0;letter-spacing:1px;outline:none;text-decoration:none;list-style:none;resize:none;box-sizing:border-box;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+/*
+|------------------------------------------------------------------------------
+| AP ADVOCATES
+| ManQr Dev
+| 27 Maret 2018
+| https://manqr.com
+|------------------------------------------------------------------------------
+*/
+
+
+
+*{
+    background:0;
+    margin:0;
+    padding:0;
+    border:0;
+    letter-spacing:1px
+    ;outline:none;
+    text-decoration:none;
+    list-style:none;
+    resize:none;
+    box-sizing:border-box;
+    -webkit-tap-highlight-color:rgba(0,0,0,0)
+}
 *::-webkit-scrollbar{width:6px}
 *::-webkit-scrollbar-thumb{background:#fff}
 html,body{
@@ -43,6 +66,45 @@ nav{
 .list-menu {
     padding-right: 2vw;
 }
+
+.profileTxt{
+    overflow:hidden
+}
+.profileTxt table{
+    width:100%;
+    height:100%;
+    text-align:center;
+    color:#fff;
+    border-spacing:0;
+    border-collapse:collapse
+}
+.profileTxt td{
+    background:rgba(0,0,0,.5)
+}
+.profileTxt td:before{
+    content:'';
+    background:#79756f;
+    z-index:-1;
+    transition:1s
+}
+.profileTxt td:hover:before{
+    transform:scale3d(1.1,1.1,1.1)
+}
+.profileTxt h1{
+    padding:0 0 10px;
+    font:bold 16px calibri,sans-serif;
+    color:#fff;
+    border-bottom:2px solid;
+    display:inline-block
+}
+.profileTxt h6{
+    margin:15px 0 0;
+    padding:0 40px;
+    font:13px/18px calibri,sans-serif
+}
+
+
+
 .mega{background:url('../img/mega.jpg')bottom/cover no-repeat #fff;width:100%;height:400px}
 
 .lang{background:#e4e4e4}
@@ -169,15 +231,9 @@ header a{margin:auto;padding:15px 0;width:100%;max-width:800px;letter-spacing:0;
 .profile2 dd.active p{padding:0 0 15px;font:15px/22px calibri,sans-serif;text-align:justify;display:table}
 .profile2 dd.active p:last-child{padding:0}
 .profile2 b{font-weight:700}
-.profile2 div{background:#79756f;padding:40px;color:#fff;overflow-x:hidden}
 
-.achievement{overflow:hidden}
-.achievement table{width:100%;height:100%;text-align:center;color:#fff;border-spacing:0;border-collapse:collapse}
-.achievement td{background:rgba(0,0,0,.5)}
-.achievement td:before{content:'';background:url(../img/achievement.jpg)center/cover no-repeat;position:absolute;top:0;left:0;width:100%;height:100%;z-index:-1;transition:1s}
-.achievement td:hover:before{transform:scale3d(1.1,1.1,1.1)}
-.achievement h1{padding:0 0 10px;font:bold 16px calibri,sans-serif;color:#fff;border-bottom:2px solid;display:inline-block}
-.achievement h6{margin:15px 0 0;padding:0 40px;font:13px/18px calibri,sans-serif}
+
+
 
 .achievement2 div{background:#6b6b6a;width:calc(100% - 33px);overflow-x:hidden}
 .achievement2 span{width:100%;height:100%;display:table}

@@ -1,0 +1,55 @@
+
+import React from 'react';
+import Header from './header';
+import Slider from './slider';
+import Profile from './profile';
+import ProfileTxt from './profile-txt';
+import Team from './team';
+import TeamTxt from './team-txt';
+import Practice from './practice';
+import PracticeTxt from './practice-txt';
+
+const Home = () => ({
+    render(){
+        return(
+            <div>
+                <Header/>
+
+
+                 {/* BEGIN LEFT SIDE PRATICE */}
+                <article>
+                    <Slider />
+                    
+                    <Profile />
+                    
+                    <TeamTxt />
+                    
+                    <Practice />
+                </article>
+                {/* END LEFT SIDE PRATICE */}
+
+                
+
+                {/* BEGIN RIGHT SIDE PRATICE */}
+                <article>
+
+                    <section className="home2">
+                         <dt className="languange">
+                           
+                        </dt>
+                    </section>
+
+                    <ProfileTxt />
+                    
+                    <Team />
+                    
+                    <PracticeTxt />
+                </article>
+                {/* END RIGHT SIDE PRATICE */}
+
+            </div>
+        )
+    }
+})
+
+export default Home;

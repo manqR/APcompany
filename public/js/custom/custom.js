@@ -9,7 +9,7 @@ $(function(){
             sectionSelector:'section',
             leftSelector:'article:first',
             rightSelector:'article:last',
-            anchors:['home','shortcut','profile','achievement','team','practice','clients','news-articles'],
+            anchors:['home','profile','team','practice','clients','news'],
             normalScrollElements:'nav,.contact form,.profile2 div,.achievement2 div,.team2 div,.practice2 div,.clients2 div,.news-articles div'
 		})
 		
@@ -17,9 +17,18 @@ $(function(){
             console.log(a);
 
             
-    }
-
-    $(document).on('click','.team2 fieldset a',function(){
+      }
+      $('.practice fieldset a:first,.practice2 dd:first').addClass('active')
+	
+	
+	
+	$(document).on('click','.practice fieldset a',function(){
+		$(this).addClass('active').siblings().removeClass('active')
+		$('.practice dd[data='+$(this).attr('data')+']').addClass('active').siblings().removeClass('active')
+		$('.practice div').scrollTop(0)
+      })
+      
+      $(document).on('click','.team2 fieldset a',function(){
             $(this).addClass('active').siblings().removeClass('active')
             $('.team2 aside dd').removeClass('active')
             $('.team2 aside[data='+$(this).attr('data')+']').addClass('active').siblings().removeClass('active')

@@ -4,6 +4,12 @@
 | ManQr Dev
 | 27 Maret 2018
 | https://manqr.com
+|
+| - LOGO
+| - LANGUAGE
+| - MENU & NAVIGATION
+| - PROFILE
+| - PRACTICE
 |------------------------------------------------------------------------------
 */
 
@@ -28,12 +34,22 @@ html,body{
     overflow:hidden
 }
 
+/*
+|------------------------------------------------------------------------------
+| LOGO
+|------------------------------------------------------------------------------
+*/
+
 .logo-app{
     width: 8vw;
     float: left;
     margin-right: 10px;
 }
-
+/*
+|------------------------------------------------------------------------------
+| LANGUANGE
+|------------------------------------------------------------------------------
+*/
 .languange{
     padding-top: 25px;
     margin-right: 100px;
@@ -44,6 +60,11 @@ html,body{
     margin: 5px;  
 }
 
+/*
+|------------------------------------------------------------------------------
+| NAV & MENU
+|------------------------------------------------------------------------------
+*/
 nav{
     z-index: 1;
     background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
@@ -67,6 +88,11 @@ nav{
     padding-right: 2vw;
 }
 
+/*
+|------------------------------------------------------------------------------
+| PROFILE
+|------------------------------------------------------------------------------
+*/
 .profileTxt{
     overflow:hidden
 }
@@ -102,6 +128,83 @@ nav{
     padding:0 40px;
     font:13px/18px calibri,sans-serif
 }
+
+
+/*
+|------------------------------------------------------------------------------
+| PRACTICE
+|------------------------------------------------------------------------------
+*/
+.practice2 span{
+    width:100%;
+    height:100%;
+    display:table
+}
+.practice2 span span{
+    vertical-align:middle;
+    display:table-cell
+}
+.practice2 dd{
+    padding:0;
+    height:0;
+    opacity:0;
+    transition:opacity .3s
+}
+ .practice2 dd.active{
+    padding:0 40px;
+    height:auto;
+    opacity:1
+}
+ .practice2 p, .practice2 li{
+    display:none
+}
+ .practice2 dd.active p{
+    padding:0 0 15px;
+    font:15px/22px calibri,sans-serif;
+    text-align:justify;
+    display:table
+}
+ .practice2 dd.active p:first-child{
+    font:bold 25px/28px calibri,sans-serif;
+    text-align:left
+}
+ .practice2 dd.active p:last-child{
+    padding:0
+}
+ .practice2 dd.active li{
+    margin:15px 0 0 18px;
+    font:15px/22px calibri,sans-serif;
+    text-align:justify;
+    list-style-type:square;
+    display:list-item
+}
+.practice2 a{
+    margin:0;
+    padding:0;
+    width:auto;
+    border:0;
+    font:15px/25px calibri,sans-serif;
+    color:#fff;
+    text-decoration:underline;
+    display:inline
+}
+ .practice2 a:before,.practice2 a:hover:before{
+    display:none;
+    visibility:hidden
+}
+ .practice2 b{
+    font-weight:700
+}
+ .practice2 div{
+    background:#2e2b31;
+    padding:40px;
+    padding-top: 8vw;
+    color:#fff;
+    overflow-x:hidden
+}
+
+
+
 
 
 
@@ -320,20 +423,6 @@ header a{margin:auto;padding:15px 0;width:100%;max-width:800px;letter-spacing:0;
 .practice a:hover:before,.practice a.active:before{width:100%;left:calc(100% + 1px)}
 .practice a.active{border-color:transparent;text-decoration:underline}
 
-.practice2 span{width:100%;height:100%;display:table}
-.practice2 span span{vertical-align:middle;display:table-cell}
-.practice2 dd{padding:0;height:0;opacity:0;transition:opacity .3s}
-.practice2 dd.active{padding:0 40px;height:auto;opacity:1}
-.practice2 p,
-.practice2 li{display:none}
-.practice2 dd.active p{padding:0 0 15px;font:15px/22px calibri,sans-serif;text-align:justify;display:table}
-.practice2 dd.active p:first-child{font:bold 25px/28px calibri,sans-serif;text-align:left}
-.practice2 dd.active p:last-child{padding:0}
-.practice2 dd.active li{margin:15px 0 0 18px;font:15px/22px calibri,sans-serif;text-align:justify;list-style-type:square;display:list-item}
-.practice2 a{margin:0;padding:0;width:auto;border:0;font:15px/25px calibri,sans-serif;color:#fff;text-decoration:underline;display:inline}
-.practice2 a:before,.practice2 a:hover:before{display:none;visibility:hidden}
-.practice2 b{font-weight:700}
-.practice2 div{background:#2e2b31;padding:40px;width:calc(100% - 33px);color:#fff;overflow-x:hidden}
 
 .clients{overflow:hidden}
 .clients table{width:100%;height:100%;text-align:center;color:#fff;border-spacing:0;border-collapse:collapse}

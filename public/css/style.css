@@ -203,9 +203,74 @@ nav{
     overflow-x:hidden
 }
 
-
-
-
+/*
+|------------------------------------------------------------------------------
+| CLIENTS
+|------------------------------------------------------------------------------
+*/
+.section-wrapper {
+    padding: 40px 0 78px;
+}
+.textrotate {
+    margin-top: 20px;
+    padding-left: 20px;
+    position: relative;
+    display: block;
+}
+.bx-wrapper {
+    position: relative;
+    margin: 0 auto 60px;
+    padding: 0;
+}
+.bx-wrapper .bx-viewport {
+    -webkit-transform: translatez(0);
+    -moz-transform: translatez(0);
+    -ms-transform: translatez(0);
+    -o-transform: translatez(0);
+    transform: translatez(0);
+}
+.bxslider li {
+    padding: 20px 0 10px;
+    max-width: 100%;
+}
+.bx-wrapper h3 {
+    margin-bottom: 5px;
+}
+.section-wrapper a {
+    outline: 0;
+    color: #ffffff;
+}
+.bx-wrapper h4 {
+    font-size: 14px;
+    color: #999;
+    font-family: "Lato",sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+.bx-controls-direction {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    width: 19px;
+    /*background: url('./img/line.png');*/
+}
+.bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    background: #000;
+    outline: 0;
+    color: #fff;
+    width: 35px;
+    line-height: 35px;
+    height: 35px;
+    font-size: 14px;
+    text-align: center;
+    z-index: 100;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
+}
 
 
 .mega{background:url('../img/mega.jpg')bottom/cover no-repeat #fff;width:100%;height:400px}

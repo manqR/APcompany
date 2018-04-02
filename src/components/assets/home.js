@@ -8,6 +8,8 @@ import Team from './team';
 import TeamTxt from './team-txt';
 import Practice from './practice';
 import PracticeTxt from './practice-txt';
+import Clients from './clients';
+import ClientsTxt from './clients-txt';
 
 const Home = () => ({
     render(){
@@ -25,6 +27,9 @@ const Home = () => ({
                     <TeamTxt />
                     
                     <Practice />
+
+                    <Clients />
+                    
                 </article>
                 {/* END LEFT SIDE PRATICE */}
 
@@ -40,10 +45,13 @@ const Home = () => ({
                     </section>
 
                     <ProfileTxt />
-                    
+
                     <Team />
                     
-                    <PracticeTxt />
+                   <PracticeTxt />
+
+                    <ClientsTxt />
+                    
                 </article>
                 {/* END RIGHT SIDE PRATICE */}
 

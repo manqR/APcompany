@@ -10,6 +10,8 @@ import Practice from './practice';
 import PracticeTxt from './practice-txt';
 import Clients from './clients';
 import ClientsTxt from './clients-txt';
+import News from './news';
+import Articles from './articles';
 
 const Home = () => ({
     render(){
@@ -29,6 +31,8 @@ const Home = () => ({
                     <Practice />
 
                     <Clients />
+
+                    <News />
                     
                 </article>
                 {/* END LEFT SIDE PRATICE */}
@@ -48,10 +52,11 @@ const Home = () => ({
 
                     <Team />
                     
-                   <PracticeTxt />
+                    <PracticeTxt />
 
                     <ClientsTxt />
                     
+                    <Articles />
                 </article>
                 {/* END RIGHT SIDE PRATICE */}
 

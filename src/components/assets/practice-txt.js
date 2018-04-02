@@ -4,7 +4,7 @@ class PracticeTxt extends Component {
     render() {
       
         return (
-            <section class="practice practice2" >
+            <section className="practice practice2" >
                 <span>
                     <span >
                         <dd data="practice" >

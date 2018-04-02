@@ -31,15 +31,15 @@ class ClientTxt extends Component {
        
         return (
             <section className="clients2">
-                <div className="row" style={{marginTop:'5vw'}}>
+                <div className="row" style={{marginTop:'1vw'}}>
                     <div className="content span12 col-lg-12 col-md-12 col-sm-12 col-xs-12 clearfix">
                         <div className="section-wrapper">
                             <div className="textrotate">
-                                <div className="bx-wrapper" style={styleWrap}>
-                                    <div className="bx-viewport" style={styleViewport}>
-                                        <ul className="bxslider" id="jb-bxslider-wrap-159" style={styleBxslider}>
+                                <div className="bx-wrapper">
+                                    <div className="bx-viewport">
+                                        <ul className="bxslider" id="jb-bxslider-wrap-159">
                                             
-                                            <li className="bxslider-sitem bx-clone" style={styleSitem}>
+                                            <li className="bxslider-sitem">
                                            
                                                 <h3 className="bxslider-item-title">
                                                     <a href="#" className="title">Cable Media</a>
@@ -49,11 +49,11 @@ class ClientTxt extends Component {
                                                     Monday, 21 March 2016 06:07							  	
                                                 </h4>
                                                 <p className="bxslider-item-para">                                  	
-                                                    Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.Curabitur blandit…                                
+                                                Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.Curabitur blandit… <br/>
                                                 </p>
                                                   
                                             </li>
-                                            <li className="bxslider-sitem bx-clone" style={styleSitem}>
+                                            <li className="bxslider-sitem">
                                              
                                                 <h3 className="bxslider-item-title">
                                                     <a href="#" className="title">Leading Lubricants Companies</a>
@@ -65,11 +65,11 @@ class ClientTxt extends Component {
                                                 </h4>
                                               
                                                 <p className="bxslider-item-para">                                  	
-                                                    Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.Curabitur blandit…                                
+                                                Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.Curabitur blandit… <br/>
                                                 </p>
                                                  
                                             </li>
-                                            <li className="bxslider-sitem" style={styleSitem}>
+                                            <li className="bxslider-sitem">
                                               
                                                 <h3 className="bxslider-item-title">
                                                     <a href="#" className="title"> International Helmet Manufacturerx</a>
@@ -81,11 +81,11 @@ class ClientTxt extends Component {
                                                 </h4>
                                                
                                                 <p className="bxslider-item-para">                                  	
-                                                    Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.Curabitur blandit…                                
+                                                Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.Curabitur blandit… <br/>
                                                 </p>
                                                   
                                             </li>
-                                            <li className="bxslider-sitem" style={styleSitem}>
+                                            <li className="bxslider-sitem">
                                               
                                                 <h3 className="bxslider-item-title">
                                                     <a href="#" className="title">
@@ -97,11 +97,11 @@ class ClientTxt extends Component {
                                                 </h4>
                                                
                                                 <p className="bxslider-item-para">                                  	
-                                                    Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.Curabitur blandit…                                
+                                                Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.Curabitur blandit… <br/>
                                                 </p>
                                                     
                                             </li>
-                                            <li className="bxslider-sitem" style={styleSitem}>
+                                            <li className="bxslider-sitem">
                                               
                                                 <h3 className="bxslider-item-title">
                                                     <a href="#" className="title">Cable Media</a>
@@ -113,11 +113,11 @@ class ClientTxt extends Component {
                                                 </h4>
                                               
                                                 <p className="bxslider-item-para">                                  	
-                                                    Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.Curabitur blandit…                                
+                                                Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.Curabitur blandit… <br/>
                                                 </p>
                                                 
                                             </li>
-                                            <li className="bxslider-sitem" style={styleSitem}>
+                                            <li className="bxslider-sitem">
                                                 
                                                 <h3 className="bxslider-item-title">
                                                     <a href="#" className="title">
@@ -130,11 +130,11 @@ class ClientTxt extends Component {
                                                 </h4>
                                                 
                                                 <p className="bxslider-item-para">                                  	
-                                                    Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.Curabitur blandit…                                
+                                                Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.Curabitur blandit… <br/>
                                                 </p>
                                                
                                             </li>
-                                            <li className="bxslider-sitem bx-clone" style={styleSitem}>
+                                            <li className="bxslider-sitem">
                                                 
                                                 <h3 className="bxslider-item-title">
                                                     <a href="#" className="title">
@@ -147,11 +147,11 @@ class ClientTxt extends Component {
                                                 </h4>
                                                 
                                                 <p className="bxslider-item-para">                                  	
-                                                    Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.Curabitur blandit…                                
+                                                Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.Curabitur blandit… <br/>
                                                 </p>
                                                    
                                             </li>
-                                            <li className="bxslider-sitem bx-clone" style={styleSitem}>
+                                            <li className="bxslider-sitem">
                                                 
                                                 <h3 className="bxslider-item-title">
                                                     <a href="#" className="title">
@@ -162,13 +162,13 @@ class ClientTxt extends Component {
                                                     Tuesday, 05 April 2016 15:51							  	
                                                 </h4>
                                                 <p className="bxslider-item-para">                                  	
-                                                    Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.Curabitur blandit…                                
+                                                    Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.Curabitur blandit… <br/>
                                                 </p> 
                                             </li>
                                         </ul>
                                     </div>
                                     <div className="bx-controls bx-has-controls-direction">
-                                        <div className="bx-controls-direction" style={styleDirection}><a className="bx-prev" href=""><i className="fa fa-arrow-down"></i></a><a className="bx-next" href=""><i className="fa fa-arrow-up"></i></a></div>
+                                        <div className="bx-controls-direction" style={styleDirection}></div>
                                     </div>
                                 </div>
                             </div>

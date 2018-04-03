@@ -13,13 +13,11 @@ $(function(){
             normalScrollElements:'nav,.contact form,.profile2 div,.achievement2 div,.team2 div,.practice2 div,.clients2 div,.news-articles div'
 		})
 		
-            var a = $('.multiscroll').length;
-            console.log(a);
+
 
             
       }
       $('.practice fieldset a:first,.practice2 dd:first').addClass('active')
-	
 	
 	
 	$(document).on('click','.practice fieldset a',function(){

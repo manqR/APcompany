@@ -32,12 +32,12 @@ class ClientTxt extends Component {
         return (
             <section className="clients2">
                 <div className="row" style={{marginTop:'1vw'}}>
-                    <div className="content span12 col-lg-12 col-md-12 col-sm-12 col-xs-12 clearfix">
+                    <div className="content span12 col-lg-12 col-md-12 col-sm-12 col-xs-12 clearfix" style={{height:600}}>
                         <div className="section-wrapper">
                             <div className="textrotate">
                                 <div className="bx-wrapper">
                                     <div className="bx-viewport">
-                                        <ul className="bxslider" id="jb-bxslider-wrap-159">
+                                        <ul className="bxslider" id="jb-bxslider-wrap-158">
                                             
                                             <li className="bxslider-sitem">
                                            

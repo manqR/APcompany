@@ -36,6 +36,153 @@ html,body{
 
 /*
 |------------------------------------------------------------------------------
+| HOME
+|------------------------------------------------------------------------------
+*/
+.home{
+    /* background:url(../img/slider1.jpg)center/contain no-repeat; */
+    width: 200%;
+   /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    */
+}
+.no-padding{
+    padding-left:0;
+    padding-right:0;
+  }
+  #myCarousel {
+    width: 100%;
+}
+.carousel-control {
+    margin-top: 20px;
+}
+.carousel-inner .item {
+    width: 100%;
+    height: 46.7vw;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.home div{
+   background:rgba(0,0,0,.5)
+}
+.home center{
+   padding:30px;
+   position:absolute;
+   top:0;
+   left:0;
+   right:0
+}
+.home center img{
+   margin:0 30px 0 0;
+   float:left
+}
+.home h1{
+   font:20px calibri,sans-serif;
+   position:absolute;
+   top:50%;
+   left:50%;
+   transform:translate(-50%,-50%)
+}
+.home h1 b{
+   font:bold 30px calibri,sans-serif
+}
+.home2{
+   margin:0 0 0 -100%;
+   width:200%
+}
+.home2 dl{
+   margin:30px;
+   padding:15px;
+   width:calc(50% - 60px);
+   color:#fff;
+   border:1px solid;
+   position:absolute;
+   bottom:0
+}
+.home2 dl:nth-child(2){
+   right:0
+}
+.home2 h2{
+   width:68px;
+   font:bold 13px calibri,sans-serif;
+   float:left
+}
+.home2 fieldset{
+   width:calc(100% - 80px);
+   height:44px;
+   overflow:hidden;
+   float:right
+}
+.home2 fieldset a{
+   height:22px;
+   font:bold 13px/22px calibri,sans-serif;
+   color:#fff;
+   overflow:hidden;
+   display:box;
+   line-clamp:1;
+   box-orient:vertical
+}
+.home2 dd{
+   animation:t 50s linear infinite
+}
+.home2 center{
+   padding:30px 33px;
+   text-align:right
+}
+.home2 center dt{
+   margin:0 30px 0 0;
+   height:42px;
+   overflow:hidden;
+   float:right
+}
+.home2 center dt:hover{
+   height:auto
+}
+.home2 center a{
+   padding:0 15px;
+   font:bold 18px/42px calibri,sans-serif;
+   color:#fff;
+   text-align:left;
+   display:block;
+   cursor:pointer
+}
+.home2 center a:hover{
+   text-decoration:underline
+}
+.home2 center span{
+   margin:0 9px 0 0;
+   width:25px;
+   height:18px;
+   display:inline-table;
+   vertical-align:middle
+}
+.home2 center a:first-child span{
+   background:url(../img/us.svg)center/contain no-repeat
+}
+.home2 center a:nth-child(2) span{
+   background:url(../img/id.svg)center/contain no-repeat
+}
+.home2 center a:nth-child(3) span{
+   background:url(../img/cn.svg)center/contain no-repeat
+}
+.home2 center a:nth-child(4) span{
+   background:url(../img/kr.svg)center/contain no-repeat
+}
+.home2 center a:last-child span{
+   background:url(../img/fr.svg)center/contain no-repeat
+}
+.home2 center img{
+   padding:0 0 0 15px
+}
+
+
+/*
+|------------------------------------------------------------------------------
 | LOGO
 |------------------------------------------------------------------------------
 */
@@ -501,39 +648,6 @@ header a{margin:auto;padding:15px 0;width:100%;max-width:800px;letter-spacing:0;
 .ms-tableCell{position:relative}
 .multiscroll{opacity:0;transition:1.5s}
 
-.home{
-    background:url(../img/slider1.jpg)no-repeat center center fixed;
-    -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-}
-
-.home div{background:rgba(0,0,0,.5)}
-.home center{padding:30px;position:absolute;top:0;left:0;right:0}
-.home center img{margin:0 30px 0 0;float:left}
-.home h1{font:20px calibri,sans-serif;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
-.home h1 b{font:bold 30px calibri,sans-serif}
-
-.home2{margin:0 0 0 -100%;width:200%}
-.home2 dl{margin:30px;padding:15px;width:calc(50% - 60px);color:#fff;border:1px solid;position:absolute;bottom:0}
-.home2 dl:nth-child(2){right:0}
-.home2 h2{width:68px;font:bold 13px calibri,sans-serif;float:left}
-.home2 fieldset{width:calc(100% - 80px);height:44px;overflow:hidden;float:right}
-.home2 fieldset a{height:22px;font:bold 13px/22px calibri,sans-serif;color:#fff;overflow:hidden;display:box;line-clamp:1;box-orient:vertical}
-.home2 dd{animation:t 50s linear infinite}
-.home2 center{padding:30px 33px;text-align:right}
-.home2 center dt{margin:0 30px 0 0;height:42px;overflow:hidden;float:right}
-.home2 center dt:hover{height:auto}
-.home2 center a{padding:0 15px;font:bold 18px/42px calibri,sans-serif;color:#fff;text-align:left;display:block;cursor:pointer}
-.home2 center a:hover{text-decoration:underline}
-.home2 center span{margin:0 9px 0 0;width:25px;height:18px;display:inline-table;vertical-align:middle}
-.home2 center a:first-child span{background:url(../img/us.svg)center/contain no-repeat}
-.home2 center a:nth-child(2) span{background:url(../img/id.svg)center/contain no-repeat}
-.home2 center a:nth-child(3) span{background:url(../img/cn.svg)center/contain no-repeat}
-.home2 center a:nth-child(4) span{background:url(../img/kr.svg)center/contain no-repeat}
-.home2 center a:last-child span{background:url(../img/fr.svg)center/contain no-repeat}
-.home2 center img{padding:0 0 0 15px}
 @keyframes t{0%{transform:translate3d(0,0,0)}25%{transform:translate3d(0,-61px,0)}50%{transform:translate3d(0,-124px,0)}100%{transform:translate3d(0,0,0)}}
 
 .contact aside{height:100%;position:absolute;left:-290px;transition:.3s}

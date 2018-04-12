@@ -6,12 +6,14 @@ const Clients = () => ({
         return(
             <section className="clients">
                 <table>
-                    <tr>
-                        <td>
-                            <h1>Clients</h1>
-                            <h6>Our Clients</h6>
-                        </td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h1>Clients</h1>
+                                <h6>Our Clients</h6>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
             </section>
 

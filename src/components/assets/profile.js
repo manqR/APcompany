@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 
 const Profile = () => ({
@@ -6,11 +7,13 @@ const Profile = () => ({
         return(
             <section className="profile">
                 <table>
-                    <tr>
-                        <td>
-                            <h1>PROFILE</h1>
-                        </td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h1>PROFILE</h1>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
             </section>
         )

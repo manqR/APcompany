@@ -3,28 +3,7 @@ import Background from './img/line.png';
 
 class ClientTxt extends Component {
     render() {
-        const styleWrap = {
-            maxWidth: '100%',
-            margin: '0px auto'
-        }
-        const styleViewport= {
-            width: '100%',
-            overflow: 'hidden', 
-            position: 'relative',
-            height: '416px'
-        }
-        const styleBxslider= {
-            width: 'auto',
-            position: 'relative',
-            transitionDuration: '0s',
-            transform: 'translate3d(0px, -416px, 0px)'
-        }
-        const styleSitem= {
-            float: 'none',
-            listStyle: 'none',
-            position: 'relative', 
-            width: '438px'
-        }
+        
         const styleDirection = {
             backgroundImage: `url(${Background})`
         }
@@ -42,7 +21,7 @@ class ClientTxt extends Component {
                                             <li className="bxslider-sitem">
                                            
                                                 <h3 className="bxslider-item-title">
-                                                    <a href="#" className="title">Cable Media</a>
+                                                    <a href="" className="title">Cable Media</a>
                                                 </h3>   
                                                 <h4 className="bxslider-item-posted-date">
                                                     Written on -
@@ -56,7 +35,7 @@ class ClientTxt extends Component {
                                             <li className="bxslider-sitem">
                                              
                                                 <h3 className="bxslider-item-title">
-                                                    <a href="#" className="title">Leading Lubricants Companies</a>
+                                                    <a href="" className="title">Leading Lubricants Companies</a>
                                                 </h3>
                                                 
                                                 <h4 className="bxslider-item-posted-date">
@@ -72,7 +51,7 @@ class ClientTxt extends Component {
                                             <li className="bxslider-sitem">
                                               
                                                 <h3 className="bxslider-item-title">
-                                                    <a href="#" className="title"> International Helmet Manufacturerx</a>
+                                                    <a href="" className="title"> International Helmet Manufacturerx</a>
                                                 </h3>
                                                  
                                                 <h4 className="bxslider-item-posted-date">
@@ -88,7 +67,7 @@ class ClientTxt extends Component {
                                             <li className="bxslider-sitem">
                                               
                                                 <h3 className="bxslider-item-title">
-                                                    <a href="#" className="title">
+                                                    <a href="" className="title">
                                                     World Leading Home Furniture Company</a>
                                                 </h3>  
                                                 <h4 className="bxslider-item-posted-date">
@@ -104,7 +83,7 @@ class ClientTxt extends Component {
                                             <li className="bxslider-sitem">
                                               
                                                 <h3 className="bxslider-item-title">
-                                                    <a href="#" className="title">Cable Media</a>
+                                                    <a href="" className="title">Cable Media</a>
                                                 </h3>
                                             
                                                 <h4 className="bxslider-item-posted-date">
@@ -120,7 +99,7 @@ class ClientTxt extends Component {
                                             <li className="bxslider-sitem">
                                                 
                                                 <h3 className="bxslider-item-title">
-                                                    <a href="#" className="title">
+                                                    <a href="" className="title">
                                                     Leading Lubricants Companies</a>
                                                 </h3>
                                                 
@@ -137,7 +116,7 @@ class ClientTxt extends Component {
                                             <li className="bxslider-sitem">
                                                 
                                                 <h3 className="bxslider-item-title">
-                                                    <a href="#" className="title">
+                                                    <a href="" className="title">
                                                     International Helmet Manufacturer</a>
                                                 </h3>
                                                 
@@ -154,7 +133,7 @@ class ClientTxt extends Component {
                                             <li className="bxslider-sitem">
                                                 
                                                 <h3 className="bxslider-item-title">
-                                                    <a href="#" className="title">
+                                                    <a href="" className="title">
                                                     World Leading Home Furniture Company</a>
                                                 </h3>
                                                 <h4 className="bxslider-item-posted-date">

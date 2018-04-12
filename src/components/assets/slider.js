@@ -25,14 +25,26 @@ class Slider extends Component {
                     <div className="carousel-inner">
                         <div className="item active">
                             <img src="img/slider1.jpg" alt="Los Angeles" style={{width:'100%'}} />
+                            <div className="carousel-caption">
+                                <h3>Integrity</h3>
+                                <p>Serving clients professionally to the best of our ability in the quest to protect the client's rights, adhering to strong moral and ethical principles</p>
+                            </div>
                         </div>            
 
                         <div className="item">
                             <img src="img/slider2.jpg" alt="Chicago" style={{width:'100%'}} />
+                            <div className="carousel-caption">
+                                <h3>Loyalty</h3>
+                                <p>Loyalty to both the clients and among the team.</p>
+                            </div>
                         </div>
 
                         <div className="item">
                             <img src="img/slider3.jpg" alt="New york" style={{width:'100%'}} />
+                            <div className="carousel-caption">
+                                <h3>Trust</h3>
+                                <p>Endeavour to be worthy of our client's and our partner's trust.</p>
+                            </div>
                         </div>
                     </div>          
                 

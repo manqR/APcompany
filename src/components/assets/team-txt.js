@@ -1,22 +1,25 @@
 import React, { Component } from 'react';
-
+import logo from './img/logo2.png';
 class TeamTxt extends Component {
     render() {
 
         const styleTeam = {
-            paddingTop: '150px'
+            paddingTop: '150px',
+            justifyContent: 'space-between'
         }
         return (
             <section className="team2">
                 <span>
                     <span>
                         <fieldset style={styleTeam}>
-                            <a data="partner" color="#151619">Partners</a>
+                            <a  data="partner" style={{border: '0px solid'}}><img src={ logo } alt="logo" style={{width:'8vw'}}/></a>
+                            <a  data="associates" style={{border: '0px solid'}}><img src={ logo } alt="logo" style={{width:'8vw'}}/></a>
+                            {/* <a data="partner" color="#151619">Partners</a>
                             <a data="associates" color="#262525">Associates</a>
                             <a data="paralegal" color="#212428">Paralegals</a>
                             <a data="general-affairs-finance" color="#19181a">General Affairs &amp; Finances</a>
                             <a data="secretary" color="#1a1c21">Secretaries</a>
-                            <a data="support-staff" color="#141414">Support Staffs</a>
+                            <a data="support-staff" color="#141414">Support Staffs</a> */}
                         </fieldset>
                         <aside data="partner">
                             <dd data="justisiari-p-kusumah" color="#453a34">

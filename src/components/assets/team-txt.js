@@ -5,78 +5,41 @@ class TeamTxt extends Component {
 
         const styleTeam = {
             paddingTop: '150px',
-            justifyContent: 'space-between'
+            width: '100%',            
+            display: 'flex',
+            justifyContent: 'space-around'
         }
         return (
             <section className="team2">
                 <span>
                     <span>
-                        <fieldset style={styleTeam}>
-                            <a  data="partner" style={{border: '0px solid'}}><img src={ logo } alt="logo" style={{width:'8vw'}}/></a>
-                            <a  data="associates" style={{border: '0px solid'}}><img src={ logo } alt="logo" style={{width:'8vw'}}/></a>
-                            {/* <a data="partner" color="#151619">Partners</a>
-                            <a data="associates" color="#262525">Associates</a>
-                            <a data="paralegal" color="#212428">Paralegals</a>
-                            <a data="general-affairs-finance" color="#19181a">General Affairs &amp; Finances</a>
-                            <a data="secretary" color="#1a1c21">Secretaries</a>
-                            <a data="support-staff" color="#141414">Support Staffs</a> */}
-                        </fieldset>
-                        <aside data="partner">
+                        <div style={styleTeam}>
+                            <a  data="apadvocates" style={{border: '0px solid'}}><img src={ logo } alt="logo" style={{width:'8vw'}}/></a>
+                            <a  data="apconsultant" style={{border: '0px solid'}}><img src={ logo } alt="logo" style={{width:'8vw'}}/></a>
+                        </div>
+                        <aside data="apadvocates" id="apadvocates">
                             <dd data="justisiari-p-kusumah" color="#453a34">
                                 <span>
                                     <span>
-                                        <h1>Justisiari P Kusumah</h1>
-                                        <h2>Managing Partner</h2>
+                                        <h1>Partner</h1>
                                     </span>
                                 </span>
                             </dd>
                             <dd data="risti-wulansari" color="#3b2516">
                                 <span>
                                     <span>
-                                        <h1>Risti Wulansari</h1>
-                                        <h2>Partner</h2>
+                                        <h1>Our Team</h1>
                                     </span>
                                 </span>
-                            </dd>
-                            <dd data="wardaya" color="#2f211b">
-                                <span>
-                                    <span>
-                                        <h1>Wardaya</h1>
-                                        <h2>Partner</h2>
-                                    </span>
-                                </span>
-                            </dd>
-                            <dd data="fortuna-alvariza" color="#a07a50">
-                                <span>
-                                    <span>
-                                        <h1>Fortuna Alvariza</h1>
-                                        <h2>Partner</h2>
-                                    </span>
-                                </span>
-                            </dd>
+                            </dd>                            
                         </aside>
-                        <aside data="associates">
-                            <dd data="lukman-hakim-basir" color="#5e5b4f">
-                                <span>
-                                    <span>
-                                        <h1>Lukman Hakim Basir</h1>
-                                        <h2>Senior Associate</h2>
-                                    </span>
-                                </span>
-                            </dd>
-                            <dd data="fajar-budiman-kusumo" color="#381d1b">
-                                <span>
-                                    <span>
-                                        <h1>Fajar Budiman Kusumo</h1>
-                                        <h2>Senior Associate</h2>
-                                    </span>
-                                </span>
-                            </dd>
+
+                        <aside data="apconsultant" id="apconsultant">
+                            
                             <dd data="elsiana-inda-putri-maharani" color="#57463a">
                                 <span>
                                     <span>
                                         <h1>Elsiana Inda Putri Maharani</h1>
-                                        <h2>Senior Associate</h2>
                                     </span>
                                 </span>
                             </dd>
@@ -84,115 +47,13 @@ class TeamTxt extends Component {
                                 <span>
                                     <span>
                                         <h1>Danny Kobrata</h1>
-                                        <h2>Senior Associate</h2>
                                     </span>
                                 </span>
                             </dd>
-                            <dd data="ratu-aurora" color="#251f1e">
-                                <span>
-                                    <span>
-                                        <h1>Ratu Aurora</h1>
-                                        <h2>Associate</h2>
-                                    </span>
-                                </span>
-                            </dd>
+                           
                             
                         </aside>
-                        <aside data="paralegal">
-                            <dd data="yunita-puspasari" color="#1e1712">
-                                <span>
-                                    <span>
-                                        <h1>Yunita Puspasari</h1>
-                                        <h2>Trademark Manager</h2>
-                                    </span>
-                                </span>
-                            </dd>
-                            <dd data="lusiana-ayu-mayansari" color="#28150b">
-                                <span>
-                                    <span>
-                                        <h1>Lusiana Ayu Mayansari</h1>
-                                        <h2>Patent & Design Manager</h2>
-                                    </span>
-                                </span>
-                            </dd>
-                            <dd data="nugraha-brata-kusumah" color="#1c181c">
-                                <span>
-                                    <span>
-                                        <h1>Nugraha Brata Kusumah</h1>
-                                        <h2>Paralegal</h2>
-                                    </span>
-                                </span>
-                            </dd>
-                            <dd data="somnis-ferina" color="#482228">
-                                <span>
-                                    <span>
-                                        <h1>Somnis Ferina</h1>
-                                        <h2>Paralegal</h2>
-                                    </span>
-                                </span>
-                            </dd>
-                        </aside>
-                        <aside data="general-affairs-finance">
-                            <dd data="denni-koswara" color="#19181a">
-                                <span>
-                                    <span>
-                                        <h1>Denni Koswara</h1>
-                                        <h2>General Affair & Office Department Head</h2>
-                                    </span>
-                                </span>
-                            </dd>
-                            <dd data="marisca-dwi-putri" color="#19181a">
-                                <span>
-                                    <span>
-                                        <h1>Marisca Dwi Putri</h1>
-                                        <h2>Finance Manager</h2>
-                                    </span>
-                                </span>
-                            </dd>
-                            <dd data="radita-indrayani" color="#19181a">
-                                <span>
-                                    <span>
-                                        <h1>Radita Indrayani</h1>
-                                        <h2>Billing & Business Development Officer</h2>
-                                    </span>
-                                </span>
-                            </dd>
-                            <dd data="putri-kemalasari" color="#19181a">
-                                <span>
-                                    <span>
-                                        <h1>Putri Kemalasari</h1>
-                                        <h2>Billing & Collection Officer</h2>
-                                    </span>
-                                </span>
-                            </dd>
-                        </aside>
-                        <aside data="secretary">
-                            <dd data="retno-budi-setianingsih" color="#1a1c21">
-                                <span>
-                                    <span>
-                                        <h1>Retno Budi Setianingsih</h1>
-                                        <h2>Personal Assistant</h2>
-                                    </span>
-                                </span>
-                            </dd>
-                            <dd data="ulfi-chaerunnisa" color="#1a1c21">
-                                <span>
-                                    <span>
-                                        <h1>Ulfi Chaerunnisa</h1>
-                                        <h2>Personal Assistant</h2>
-                                    </span>
-                                </span>
-                            </dd>
-                            <dd data="febriany-yusuf" color="#1a1c21">
-                                <span>
-                                    <span>
-                                        <h1>Febriany Nuzullina Yusuf</h1>
-                                        <h2>Business Development Officer</h2>
-                                    </span>
-                                </span>
-                            </dd>
-                        </aside>
-                        <aside data="support-staff"></aside>
+                        
                         <summary data="justisiari-p-kusumah">
                             <p>Justi has a long and distinguished career in IP law and is recognized as one of Indonesia's leading figures in the area. He is recognized by The Asia Pacific Legal 500 as a leading IP lawyer and was mentioned in Asialaw Leading Lawyers as a leading practitioner in IP and in Chambers Asis-Pacific As a highly recommended lawyer in IP and Telecommunication. In addition to being the Managing Partner role, Justi's main role in the firm is to lead and oversee the Litigation &amp; Enforcement team, Arbitration as well as the Commercial IP, Telecommunication, Media and Technology practice group. Justi was as a member of the IP Experts Team of the Ministry of Law and Human Rights (2011-2015).</p>
                             <p>Justi was the Chairman of the Indonesian IP Consultant Association (Asosiasi Konsultan HKI, 'AKHKI', 2010-2013), and is currently sit as a member of AKHKI's Advisory Board. Justi is also a Member of the International Trademark Association (INTA) and Asian Patent Attorneys Association (AAPA) and Board Member of the Indonesian Intellectual Property Society ("IIPS").</p>

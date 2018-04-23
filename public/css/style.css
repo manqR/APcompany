@@ -607,6 +607,182 @@ nav{
 }
  
 
+
+/*
+|------------------------------------------------------------------------------
+| TEAM
+|------------------------------------------------------------------------------
+*/
+
+.team2 div{
+    background:#1f1f20;
+    padding:60px;
+    color:#fff;
+    overflow-x:hidden;
+    transition:1s
+}
+ .team2 span{
+    width:100%;
+    height:100%;
+    display:table
+}
+ .team2 span span{
+    vertical-align:middle;
+    display:table-cell
+}
+ .team2 div{
+    margin:0 0 30px;
+    padding:0 0 30px;
+    width:100%;
+    font:13px calibri,sans-serif;
+    text-align:center;
+    border-bottom:3px solid
+}
+ .team2 div a{
+    margin:2px 0;
+    padding:8px;
+    border:1px solid;
+    position:relative;
+    overflow:hidden;
+    display:inline-table;
+    cursor:pointer
+}
+ .team2 div a:before{
+    content:'';
+    background:#fff;
+    width:0;
+    height:2px;
+    position:absolute;
+    top:50%;
+    left:0;
+    transform:translate3d(0,-50%,0);
+    transition:.3s
+}
+ .team2 div a:hover:before,.team2 div a.active:before{
+    width:100%;
+    left:calc(100% + 1px)
+}
+ .team2 div a.active{
+    border-color:transparent;
+    text-decoration:underline
+}
+ .team2 aside{
+    display:none;
+}
+ .team2 aside.active{
+    width:100%;
+    display:table
+}
+ .team2 aside dd{
+    padding:2px;
+    width:33.3%;
+    float:left
+}
+ .team2 aside span{
+    padding:6px;
+    width:100%;
+    min-height:66px;
+    text-align:center;
+    border:1px solid;
+    display:table;
+    transition:.3s;
+    cursor:pointer
+}
+ .team2 aside span:hover,.team2 aside dd.active span{
+    background:#fff;
+    color:#6d6d6d;
+    border-color:#fff
+}
+ .team2 aside span span{
+    padding:0;
+    min-height:auto;
+    border:0;
+    display:table-cell;
+    vertical-align:middle
+}
+ .team2 aside h1{
+    font:bold 13px calibri,sans-serif
+}
+ .team2 aside h2{
+    font:12px calibri,sans-serif
+}
+ .team2 summary{
+    display:none
+}
+ .team2 summary.active{
+    margin:30px 0 0;
+    padding:30px 0 0;
+    border-top:3px solid;
+    display:table
+}
+ .team2 summary p{
+    padding:0 0 15px;
+    font:15px/22px calibri,sans-serif;
+    text-align:justify
+}
+ .team2 summary center{
+    font:12px/22px calibri,sans-serif
+}
+
+
+
+
+.team{
+    overflow:hidden
+}
+ .team dd{
+    width:100%;
+    height:100%;
+    color:#fff;
+    text-align:center;
+    display:table
+}
+ .team span{
+    background:rgba(0,0,0,.2);
+    padding:35px;
+    vertical-align:bottom;
+    display:table-cell
+}
+ .team span:before{
+    content:'';
+    background:url(../img/team1.jpg)center/contain no-repeat,url(../img/team1b.jpg)center/cover no-repeat;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    transition:.3s
+}
+ .team span.teamDefault:before{
+    content:'';
+    background:url(../img/team1.jpg)center/contain no-repeat,url(../img/team1b.jpg)center/cover no-repeat
+}
+ .team span.apconsultant:before{
+    background:url(../img/partner1.jpg)center/contain no-repeat,url(../img/partner1b.jpg)center/cover no-repeat
+}
+ .team span.apconsultant:before{
+    background:url(../img/associates1.jpg)center/contain no-repeat,url(../img/associates1b.jpg)center/cover no-repeat
+}
+ .team span.paralegal:before{
+    background:url(../img/paralegal1.jpg)center/contain no-repeat,url(../img/paralegal1b.jpg)center/cover no-repeat
+}
+ .team span.general-affairs-finance:before{
+    background:url(../img/general-affairs-finance1.jpg)center/contain no-repeat,url(../img/general-affairs-finance1b.jpg)center/cover no-repeat
+}
+ .team span.secretary:before{
+    background:url(../img/secretary1.jpg)center/contain no-repeat,url(../img/secretary1b.jpg)center/cover no-repeat
+}
+ .team span.support-staff:before{
+    background:url(../img/support-staff1.jpg)center/contain no-repeat,url(../img/support-staff1b.jpg)center/cover no-repeat
+}
+ 
+
+
+
+
+
+
 .mega{background:url('../img/mega.jpg')bottom/cover no-repeat #fff;width:100%;height:400px}
 
 .lang{background:#e4e4e4}
@@ -717,17 +893,7 @@ header a{margin:auto;padding:15px 0;width:100%;max-width:800px;letter-spacing:0;
 .achievement2 ul{padding:25px 40px 40px;font:bold 13px/22px calibri,sans-serif;color:#fff;text-align:justify;display:table}
 .achievement2 li{margin:15px 0 0 20px;list-style-type:square}
 
-.team{overflow:hidden}
-.team dd{width:100%;height:100%;color:#fff;text-align:center;display:table}
-.team span{background:rgba(0,0,0,.2);padding:35px;vertical-align:bottom;display:table-cell}
-.team span:before{content:'';background:url(../img/team1.jpg)center/contain no-repeat,url(../img/team1b.jpg)center/cover no-repeat;position:absolute;top:0;left:0;width:100%;height:100%;z-index:-1;transition:.3s}
-.team span.teamDefault:before{content:'';background:url(../img/team1.jpg)center/contain no-repeat,url(../img/team1b.jpg)center/cover no-repeat}
-.team span.partner:before{background:url(../img/partner1.jpg)center/contain no-repeat,url(../img/partner1b.jpg)center/cover no-repeat}
-.team span.associates:before{background:url(../img/associates1.jpg)center/contain no-repeat,url(../img/associates1b.jpg)center/cover no-repeat}
-.team span.paralegal:before{background:url(../img/paralegal1.jpg)center/contain no-repeat,url(../img/paralegal1b.jpg)center/cover no-repeat}
-.team span.general-affairs-finance:before{background:url(../img/general-affairs-finance1.jpg)center/contain no-repeat,url(../img/general-affairs-finance1b.jpg)center/cover no-repeat}
-.team span.secretary:before{background:url(../img/secretary1.jpg)center/contain no-repeat,url(../img/secretary1b.jpg)center/cover no-repeat}
-.team span.support-staff:before{background:url(../img/support-staff1.jpg)center/contain no-repeat,url(../img/support-staff1b.jpg)center/cover no-repeat}
+
 
 .team span.raniya-ockvalynie:before{background:url(../img/raniya-ockvalynie1.jpg)center/contain no-repeat,url(../img/raniya-ockvalynie1b.jpg)center/cover no-repeat}
 .team span.fortuna-alvariza:before{background:url(../img/fortuna-alvariza1.jpg)center/contain no-repeat,url(../img/fortuna-alvariza1b.jpg)center/cover no-repeat}
@@ -764,26 +930,7 @@ header a{margin:auto;padding:15px 0;width:100%;max-width:800px;letter-spacing:0;
 .team h1{margin:0 auto 10px;padding:0 0 10px;font:bold 16px calibri,sans-serif;border-bottom:2px solid;display:table}
 .team h2{padding:0 40px;font:13px/18px calibri,sans-serif}
 
-.team2 div{background:#1f1f20;padding:60px;color:#fff;overflow-x:hidden;transition:1s}
-.team2 span{width:100%;height:100%;display:table}
-.team2 span span{vertical-align:middle;display:table-cell}
-.team2 fieldset{margin:0 0 30px;padding:0 0 30px;width:100%;font:13px calibri,sans-serif;text-align:center;border-bottom:3px solid}
-.team2 fieldset a{margin:2px 0;padding:8px;border:1px solid;position:relative;overflow:hidden;display:inline-table;cursor:pointer}
-.team2 fieldset a:before{content:'';background:#fff;width:0;height:2px;position:absolute;top:50%;left:0;transform:translate3d(0,-50%,0);transition:.3s}
-.team2 fieldset a:hover:before,.team2 fieldset a.active:before{width:100%;left:calc(100% + 1px)}
-.team2 fieldset a.active{border-color:transparent;text-decoration:underline}
-.team2 aside{display:none}
-.team2 aside.active{width:100%;display:table}
-.team2 aside dd{padding:2px;width:33.3%;float:left}
-.team2 aside span{padding:6px;width:100%;min-height:66px;text-align:center;border:1px solid;display:table;transition:.3s;cursor:pointer}
-.team2 aside span:hover,.team2 aside dd.active span{background:#fff;color:#6d6d6d;border-color:#fff}
-.team2 aside span span{padding:0;min-height:auto;border:0;display:table-cell;vertical-align:middle}
-.team2 aside h1{font:bold 13px calibri,sans-serif}
-.team2 aside h2{font:12px calibri,sans-serif}
-.team2 summary{display:none}
-.team2 summary.active{margin:30px 0 0;padding:30px 0 0;border-top:3px solid;display:table}
-.team2 summary p{padding:0 0 15px;font:15px/22px calibri,sans-serif;text-align:justify}
-.team2 summary center{font:12px/22px calibri,sans-serif}
+
 
 .practice{overflow:hidden}
 .practice table{width:100%;height:100%;text-align:center;color:#fff;border-spacing:0;border-collapse:collapse}

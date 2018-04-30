@@ -1,5 +1,7 @@
 import React from "react";
 import logo from './img/logo2.png';
+
+import { Link } from 'react-router-dom';
 import Menu from './menu';
 
 const Header = () => ({
@@ -28,8 +30,9 @@ const Header = () => ({
                         <Menu/>
 
 
-                        <ul className="nav navbar-nav navbar-right">                            
-                            <li><a href="id"><span><img src="img/id.svg" className="language-img" alt="" /></span></a></li>
+                        <ul className="nav navbar-nav navbar-right">                       
+                            <li><Link to={`lang/en`} ><span><img src="img/id.svg" className="language-img" alt="" /></span></Link>  </li>
+                                    {/* <a href="id"><span><img src="img/id.svg" className="language-img" alt="" /></span></a></li> */}
                             <li><a href="en"><span><img src="img/us.svg" className="language-img" alt="" /></span></a></li>
                         </ul>
                     </div>                    

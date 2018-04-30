@@ -41,7 +41,6 @@ $(function(){
                   $('#apconsultant').css({
                         'display' : 'none'
                   });
-            console.log('klik')
             }else if($(this).attr('data') == 'apconsultant'){
                   $('#apconsultant').css({
                         'display' : 'flex',
@@ -49,6 +48,16 @@ $(function(){
                   });
                   $('#apadvocates').css({
                         'display' : 'none'
+                  });
+                  $('#tax').css({
+                        'display' : 'none'
+                  });
+                 
+            }
+            if($(this).attr('data') == 'tax'){
+                  $('#tax').css({
+                        'display' : 'flex',
+                        'justify-content' : 'space-around'
                   });
             }
       })

@@ -17,7 +17,10 @@ class TeamTxt extends Component {
                             <a  data="apadvocates" style={{border: '0px solid'}}><img src={ logo } alt="logo" style={{width:'8vw'}}/></a>
                             <a  data="apconsultant" style={{border: '0px solid'}}><img src={ logo } alt="logo" style={{width:'8vw'}}/></a>
                         </div>
+
+
                         <aside data="apadvocates" id="apadvocates">
+
                             <dd data="justisiari-p-kusumah" color="#453a34">
                                 <span>
                                     <span>
@@ -31,35 +34,50 @@ class TeamTxt extends Component {
                                         <h1>Our Team</h1>
                                     </span>
                                 </span>
-                            </dd>                            
+                            </dd>    
+
                         </aside>
+
 
                         <aside data="apconsultant" id="apconsultant">
                             
-                            <dd data="elsiana-inda-putri-maharani" color="#57463a">
+                            <a data="tax" color="#57463a" style={{border: '0px solid', width:'20vw'}}>
                                 <span>
                                     <span>
-                                        <h1>Elsiana Inda Putri Maharani</h1>
+                                        <h1>Tax & Accounting</h1>
                                     </span>
                                 </span>
-                            </dd>
-                            <dd data="danny-kobrata" color="#564234">
-                                <span>
-                                    <span>
-                                        <h1>Danny Kobrata</h1>
-                                    </span>
-                                </span>
-                            </dd>
-                           
+                            </a>
                             
                         </aside>
+
+                        <aside data="tax" id="tax">
+                            
+                            <dd data="justisiari-p-kusumah" color="#453a34">
+                                <span>
+                                    <span>
+                                        <h1>Partner</h1>
+                                    </span>
+                                </span>
+                            </dd>
+                            <dd data="risti-wulansari" color="#3b2516">
+                                <span>
+                                    <span>
+                                        <h1>Our Team</h1>
+                                    </span>
+                                </span>
+                            </dd>    
+
+                        </aside>
                         
+
                         <summary data="justisiari-p-kusumah">
                             <p>Justi has a long and distinguished career in IP law and is recognized as one of Indonesia's leading figures in the area. He is recognized by The Asia Pacific Legal 500 as a leading IP lawyer and was mentioned in Asialaw Leading Lawyers as a leading practitioner in IP and in Chambers Asis-Pacific As a highly recommended lawyer in IP and Telecommunication. In addition to being the Managing Partner role, Justi's main role in the firm is to lead and oversee the Litigation &amp; Enforcement team, Arbitration as well as the Commercial IP, Telecommunication, Media and Technology practice group. Justi was as a member of the IP Experts Team of the Ministry of Law and Human Rights (2011-2015).</p>
                             <p>Justi was the Chairman of the Indonesian IP Consultant Association (Asosiasi Konsultan HKI, 'AKHKI', 2010-2013), and is currently sit as a member of AKHKI's Advisory Board. Justi is also a Member of the International Trademark Association (INTA) and Asian Patent Attorneys Association (AAPA) and Board Member of the Indonesian Intellectual Property Society ("IIPS").</p>
                             <p>Justi has been actively involved with IIPS in promoting IP protection/awareness in Indonesia and was involved in the establishment of Indonesia Anti Counterfeiting Society ("MIAP"). He currently serves as Chairman of MIAP. Justi is also a regular instructor for various training organized by and for the Indonesian Police Force and National IP Task Force.</p>
                             <p>Justi holds a Sarjana Hukum (Bachelor of Law) and Master degrees from Padjajaran University. He has also attended various training courses in Indonesia, Singapore, Canada, the USA, France, Australia, Hong Kong, and Japan, as well as spending time in Melbourne on secondment to one of Australia's largest firms. He is a licensed Advocate and a member of the Indonesian Advocates Association (Peradi).</p>
                         </summary>
+
                         <summary data="risti-wulansari">
                             <p>Risti has broad expertise in the IP area and has been actively involved in providing assistance for both Indonesian and foreign clients in a variety of IP projects. Risti's main role in the firm is to lead the Non-Contentious Team and oversee the Commercial IP, Telecommunication &amp; IT Division.</p>
                             <p>Risti's role include handling prosecution of trademarks and geographical indications, industrial designs, copyright and patent; enforcement of IP rights; and to lead IP commercial projects, including providing advisory services with respect of franchising, licensing, distributorship, consumer protection, anti-monopoly, as well as issues relating media and data protection/privacy. She holds a Bachelor of Law degree from the Faculty of Law, Trisakti University, Jakarta, majoring in Business Law.</p>

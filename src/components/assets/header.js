@@ -1,7 +1,6 @@
 import React from "react";
 import logo from './img/logo2.png';
 
-import { Link } from 'react-router-dom';
 import Menu from './menu';
 
 const Header = () => ({
@@ -11,6 +10,9 @@ const Header = () => ({
         const navStyle = {
             background: 'rgba(204, 204, 204, 0)'
           };
+        const mobLang = {
+            display:'inline-block'
+        }
 
         return (  
             <nav className="navbar navbar-default" style = {navStyle}>
@@ -30,10 +32,11 @@ const Header = () => ({
                         <Menu/>
 
 
-                        <ul className="nav navbar-nav navbar-right">                       
-                            <li><Link to={`lang/en`} ><span><img src="img/id.svg" className="language-img" alt="" /></span></Link>  </li>
-                                    {/* <a href="id"><span><img src="img/id.svg" className="language-img" alt="" /></span></a></li> */}
-                            <li><a href="en"><span><img src="img/us.svg" className="language-img" alt="" /></span></a></li>
+                        <ul className="nav navbar-nav navbar-right">  
+                        
+                                
+                            <li style={mobLang}><a href="en"><span><img src="img/id.svg" className="language-img" alt="" /></span></a></li>
+                            <li style={mobLang}><a href="en"><span><img src="img/us.svg" className="language-img" alt="" /></span></a></li>
                         </ul>
                     </div>                    
                 </div>                

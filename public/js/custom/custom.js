@@ -73,6 +73,14 @@ $(function(){
             
       })
 
+
+      if (window.matchMedia("(min-width: 700px)").matches) {
+            /* the viewport is at least 400 pixels wide */
+            $('.profile').css({
+                  display:'none'
+            })
+      }
+
     $(document).on('click','.move input',function(){$('.move').remove()})
 
       

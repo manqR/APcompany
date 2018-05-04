@@ -13,12 +13,14 @@ import ClientsTxt from './clients-txt';
 import News from './news';
 import Articles from './articles';
 
+
 const Home = () => ({
     render(){
         return(
             <div>
-                <Header/>
-
+                
+                    <Header/>
+               
 
                  {/* BEGIN LEFT SIDE PRATICE */}
                 <article>

@@ -74,14 +74,34 @@ $(function(){
       })
 
 
-      if (window.matchMedia("(min-width: 700px)").matches) {
-            /* the viewport is at least 400 pixels wide */
-            $('.profile').css({
-                  display:'none'
-            })
-      }
-
     $(document).on('click','.move input',function(){$('.move').remove()})
 
+      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            $('.profile').css({
+                  'display' : 'none'
+            });
+            $('.profileTxt').css({
+                  'display' : 'none'
+            });
+            $('.practice').css({
+                  'display' : 'none'
+            });
+            $('.clients2').css({
+                  'display' : 'none'
+            });
+            $('.clients').css({
+                  'display' : 'none'
+            });
+            $('#articles').css({
+                  'display' : 'none'
+            });
+            $('.team2').css({
+                  'display' : 'none'
+            });
+            $('.team').css({
+                  'display' : 'none'
+            });
+            
+      }
       
 })

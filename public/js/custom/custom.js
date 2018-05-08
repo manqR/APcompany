@@ -150,6 +150,18 @@ $(function(){
                         });
                        
                   }
+                  if(link == '#practiceMob'){
+                        showLoading();
+
+                        $('.home').css({
+                              'display' : 'none'
+                        });
+                        $('.profileMob').css({
+                              'display' : 'block',
+                              'width': '200%'
+                        });
+                       
+                  }
             })
             
       }

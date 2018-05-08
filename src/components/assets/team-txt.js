@@ -71,7 +71,7 @@ class TeamTxt extends Component {
                         </aside>
                         
 
-                        <summary data="justisiari-p-kusumah">
+                        {/* <summary data="justisiari-p-kusumah">
                             <p>Justi has a long and distinguished career in IP law and is recognized as one of Indonesia's leading figures in the area. He is recognized by The Asia Pacific Legal 500 as a leading IP lawyer and was mentioned in Asialaw Leading Lawyers as a leading practitioner in IP and in Chambers Asis-Pacific As a highly recommended lawyer in IP and Telecommunication. In addition to being the Managing Partner role, Justi's main role in the firm is to lead and oversee the Litigation &amp; Enforcement team, Arbitration as well as the Commercial IP, Telecommunication, Media and Technology practice group. Justi was as a member of the IP Experts Team of the Ministry of Law and Human Rights (2011-2015).</p>
                             <p>Justi was the Chairman of the Indonesian IP Consultant Association (Asosiasi Konsultan HKI, 'AKHKI', 2010-2013), and is currently sit as a member of AKHKI's Advisory Board. Justi is also a Member of the International Trademark Association (INTA) and Asian Patent Attorneys Association (AAPA) and Board Member of the Indonesian Intellectual Property Society ("IIPS").</p>
                             <p>Justi has been actively involved with IIPS in promoting IP protection/awareness in Indonesia and was involved in the establishment of Indonesia Anti Counterfeiting Society ("MIAP"). He currently serves as Chairman of MIAP. Justi is also a regular instructor for various training organized by and for the Indonesian Police Force and National IP Task Force.</p>
@@ -204,7 +204,7 @@ class TeamTxt extends Component {
                         <summary data="rizka-fakhirah">
                             <p>Rizka obtained her Bachelor Degree of Law from Universitas Diponegoro, Semarang in 2016. She was one of the best students during her studies in her university.</p>
                             <p>Rizka joined K&amp;K Advocates as a Junior Associate. She has been actively involved in handling IP prosecution for both local and overseas clients.</p>
-                        </summary>
+                        </summary> */}
                     </span>
                 </span>
             </section>

@@ -12,20 +12,29 @@ import Clients from './clients';
 import ClientsTxt from './clients-txt';
 import News from './news';
 import Articles from './articles';
+import Mobile from './mobile';
 
 
 const Home = () => ({
     render(){
+        const isMobile = window.innerWidth <= 700;
+        let ret = '';
+        if(isMobile){         
+           ret = <Mobile/>
+        }
         return(
             <div>
                 
-                    <Header/>
+                <Header/>
                
 
                  {/* BEGIN LEFT SIDE PRATICE */}
                 <article>
                     <Slider />
                     
+                    {ret}
+                   
+
                     <Profile />
                     
                     <TeamTxt />

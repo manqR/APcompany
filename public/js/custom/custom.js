@@ -41,6 +41,9 @@ $(function(){
                   $('#apconsultant').css({
                         'display' : 'none'
                   });
+                  $('#tax').css({
+                        'display' : 'none'
+                  });
             }else if($(this).attr('data') == 'apconsultant'){
                   $('#apconsultant').css({
                         'display' : 'flex',
@@ -101,6 +104,53 @@ $(function(){
             $('.team').css({
                   'display' : 'none'
             });
+            
+
+            $(document).ready(function () {
+                $(document).click(function (event) {
+                    var clickover = $(event.target);
+                   
+                    var _opened = $(".navbar-collapse").hasClass("collapse in");                    
+                    if (_opened === true && !clickover.hasClass("navbar-toggle")) {
+                        $("button.navbar-toggle").click();
+                    }
+                });
+            });
+
+
+            function showLoading(){
+                  $('.loading').show(0).delay(500).hide(0);
+            }
+
+            $('a').on('click' , function(){
+                  var link = $(this).attr('href');
+
+                 
+                  if(link == '#home'){
+                       
+                        showLoading();
+
+                        $('.profileMob').css({
+                              'display' : 'none'
+                        });
+                        $('.home').css({
+                              'display' : 'block'
+                        });
+                       
+                  }
+                  if(link == '#profile'){
+                        showLoading();
+
+                        $('.home').css({
+                              'display' : 'none'
+                        });
+                        $('.profileMob').css({
+                              'display' : 'block',
+                              'width': '200%'
+                        });
+                       
+                  }
+            })
             
       }
       

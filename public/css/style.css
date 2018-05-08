@@ -794,6 +794,21 @@ nav{
 
 
 
+/*
+|------------------------------------------------------------------------------
+| PROFILE MOB
+|------------------------------------------------------------------------------
+*/
+
+.profileMob{background:#79756f;padding:0 0 28px;width:100%;color:#fff;display:none;overflow: scroll;height: 100%;}
+.profileMob img{width:100%;display:table;vertical-align:top;-webkit-mask-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,1)),to(rgba(0,0,0,0)))}
+.profileMob h2{padding:25px 25px 0;font:bold 34px/34px calibri,sans-serif;color:#fff}
+.profileMob dd{padding:25px 25px 0;font:14px/20px calibri,sans-serif;color:#fff}
+.profileMob dd h1{padding:0 0 20px;font-size:18px}
+.profileMob dd p{padding:0 0 20px;text-align:justify}
+.profileMob dd center{margin:7px auto 0;font:bold 10px sans-serif;color:#fff;display:table}
+.profileMob dd:last-child center{display:none}
+
 
 
 
@@ -1015,14 +1030,6 @@ header a{margin:auto;padding:15px 0;width:100%;max-width:800px;letter-spacing:0;
 .langNav a:nth-child(4) i{background:url(../img/kr.svg)center/contain no-repeat}
 .langNav a:last-child i{background:url(../img/fr.svg)center/contain no-repeat}
 
-.profileMob{background:#79756f;padding:0 0 28px;width:100%;color:#fff;display:none}
-.profileMob img{width:100%;display:table;vertical-align:top;-webkit-mask-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,1)),to(rgba(0,0,0,0)))}
-.profileMob h2{padding:25px 25px 0;font:bold 34px/34px calibri,sans-serif;color:#fff}
-.profileMob dd{padding:25px 25px 0;font:14px/20px calibri,sans-serif;color:#fff}
-.profileMob dd h1{padding:0 0 20px;font-size:18px}
-.profileMob dd p{padding:0 0 20px;text-align:justify}
-.profileMob dd center{margin:7px auto 0;font:bold 10px sans-serif;color:#fff;display:table}
-.profileMob dd:last-child center{display:none}
 
 .achievementMob{background:#6b6b6a;width:100%;display:none}
 .achievementMob img{width:100%;display:table;vertical-align:top;-webkit-mask-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,1)),to(rgba(0,0,0,0)))}

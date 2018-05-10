@@ -832,6 +832,20 @@ nav{
 
 
 
+
+/*
+|------------------------------------------------------------------------------
+| PRACTICE MOB
+|------------------------------------------------------------------------------
+*/
+.newsEventMob{background:#39342f;width:100%;color:#fff;display:none}
+.newsEventMob img{width:100%;display:table;vertical-align:top;-webkit-mask-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,1)),to(rgba(0,0,0,0)))}
+.newsEventMob h1{padding:25px;font:bold 34px/34px calibri,sans-serif}
+.newsEventMob ul{padding:0 25px 25px;width:100%;display:table}
+.newsEventMob li{margin:0 0 20px 15px;font:bold 14px/20px calibri,sans-serif;list-style:square}
+
+
+
 .mega{background:url('../img/mega.jpg')bottom/cover no-repeat #fff;width:100%;height:400px}
 
 .lang{background:#e4e4e4}

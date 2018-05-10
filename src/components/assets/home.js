@@ -15,6 +15,7 @@ import Articles from './articles';
 import Mobile from './mobile';
 import PracticeMob from './practiceMob';
 import ClientMob from './clientMob';
+import NewsMob from './newsMob';
 
 
 const Home = () => ({
@@ -25,7 +26,7 @@ const Home = () => ({
         console.log(url[1]);
 
         if(isMobile){                   
-            profile = [<PracticeMob />,<Mobile /> ,<ClientMob/>]
+            profile = [<PracticeMob />,<Mobile /> ,<ClientMob/>, <NewsMob/>]
         }
         return(
             <div>

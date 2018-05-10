@@ -150,6 +150,9 @@ $(function(){
                         $('.practiceMob').css({
                               'display' : 'none'
                         });
+                        $('.news').css({
+                              'display' : 'none'
+                        });
                         $('.clientsMob').css({
                               'display' : 'none'
                         });
@@ -166,6 +169,9 @@ $(function(){
                               'display' : 'none'
                         });
                         $('.home').css({
+                              'display' : 'none'
+                        });
+                        $('.news').css({
                               'display' : 'none'
                         });
                         $('.clientsMob').css({
@@ -189,7 +195,33 @@ $(function(){
                         $('.home').css({
                               'display' : 'none',                              
                         });
+                        $('.news').css({
+                              'display' : 'none',                              
+                        });
                         $('.clientsMob').css({
+                              'display' : 'block',
+                              'width': '200%',
+                              'height': '100%',
+                              'overflow': 'scroll'
+                        });
+                       
+                  }
+                  if(link == '#news'){
+                        showLoading();
+
+                        $('.profileMob').css({
+                              'display' : 'none'
+                        });
+                        $('.practiceMob').css({
+                              'display' : 'none',                              
+                        });
+                        $('.home').css({
+                              'display' : 'none',                              
+                        });
+                        $('.clientsMob').css({
+                              'display' : 'none',                              
+                        });
+                        $('.newsEventMob').css({
                               'display' : 'block',
                               'width': '200%',
                               'height': '100%',

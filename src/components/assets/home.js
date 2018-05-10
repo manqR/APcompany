@@ -13,14 +13,19 @@ import ClientsTxt from './clients-txt';
 import News from './news';
 import Articles from './articles';
 import Mobile from './mobile';
+import PracticeMob from './practiceMob';
+import ClientMob from './clientMob';
 
 
 const Home = () => ({
     render(){
         const isMobile = window.innerWidth <= 700;
-        let ret = '';
-        if(isMobile){         
-           ret = <Mobile/>
+        let profile = [];
+        let url = window.location.href.split('#');
+        console.log(url[1]);
+
+        if(isMobile){                   
+            profile = [<PracticeMob />,<Mobile /> ,<ClientMob/>]
         }
         return(
             <div>
@@ -32,7 +37,7 @@ const Home = () => ({
                 <article>
                     <Slider />
                     
-                    {ret}
+                    {profile}
                    
 
                     <Profile />

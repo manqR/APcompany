@@ -133,6 +133,9 @@ $(function(){
                         $('.profileMob').css({
                               'display' : 'none'
                         });
+                        $('.practiceMob').css({
+                              'display' : 'none'
+                        });
                         $('.home').css({
                               'display' : 'block'
                         });
@@ -144,21 +147,53 @@ $(function(){
                         $('.home').css({
                               'display' : 'none'
                         });
+                        $('.practiceMob').css({
+                              'display' : 'none'
+                        });
+                        $('.clientsMob').css({
+                              'display' : 'none'
+                        });
                         $('.profileMob').css({
                               'display' : 'block',
                               'width': '200%'
                         });
                        
                   }
-                  if(link == '#practiceMob'){
+                  if(link == '#practice'){
                         showLoading();
 
+                        $('.profileMob').css({
+                              'display' : 'none'
+                        });
                         $('.home').css({
                               'display' : 'none'
                         });
-                        $('.profileMob').css({
+                        $('.clientsMob').css({
+                              'display' : 'none'
+                        });
+                        $('.practiceMob').css({
                               'display' : 'block',
                               'width': '200%'
+                        });
+                       
+                  }
+                  if(link == '#clients'){
+                        showLoading();
+
+                        $('.profileMob').css({
+                              'display' : 'none'
+                        });
+                        $('.practiceMob').css({
+                              'display' : 'none',                              
+                        });
+                        $('.home').css({
+                              'display' : 'none',                              
+                        });
+                        $('.clientsMob').css({
+                              'display' : 'block',
+                              'width': '200%',
+                              'height': '100%',
+                              'overflow': 'scroll'
                         });
                        
                   }

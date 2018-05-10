@@ -818,7 +818,7 @@ nav{
 | PRACTICE MOB
 |------------------------------------------------------------------------------
 */
-.practiceMob{background:#2e2b31;padding:0 0 28px;width:100%;color:#fff;display:none}
+.practiceMob{background:#2e2b31;padding:0 0 28px;width:200%;color:#fff;display:none;overflow: scroll;height: 100%;}
 .practiceMob img{width:100%;display:table;vertical-align:top;-webkit-mask-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,1)),to(rgba(0,0,0,0)))}
 .practiceMob h2{padding:25px 25px 0;font:bold 34px/34px calibri,sans-serif;color:#fff}
 .practiceMob dd{padding:25px 25px 0;font:14px/20px calibri,sans-serif;color:#fff}
@@ -1067,18 +1067,6 @@ header a{margin:auto;padding:15px 0;width:100%;max-width:800px;letter-spacing:0;
 .teamMob fieldset{padding:25px;width:100%;display:table}
 .teamMob select{padding:15px;width:100%;border:3px solid;font:bold 14px sans-serif;color:#fff;display:table;border-radius:0}
 .teamMob option{color:#000}
-
-.practiceMob{background:#2e2b31;padding:0 0 28px;width:100%;color:#fff;display:none}
-.practiceMob img{width:100%;display:table;vertical-align:top;-webkit-mask-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,1)),to(rgba(0,0,0,0)))}
-.practiceMob h2{padding:25px 25px 0;font:bold 34px/34px calibri,sans-serif;color:#fff}
-.practiceMob dd{padding:25px 25px 0;font:14px/20px calibri,sans-serif;color:#fff}
-.practiceMob dd p{padding:0 0 20px;text-align:justify}
-.practiceMob dd p:first-child{font:bold 18px/20px calibri,sans-serif;text-align:left}
-.practiceMob dd center{margin:7px auto 0;font:bold 14px sans-serif;color:#fff;display:table}
-.practiceMob dd:last-child center{display:none}
-.practiceMob dd a{text-decoration:underline;color:#fff}
-.practiceMob li{margin:0 0 20px 15px;font:14px/20px calibri,sans-serif;text-align:justify;list-style:square}
-.practiceMob li:last-child{margin:0 0 0 15px}
 
 .clientsMob{background:#39342f;width:100%;color:#fff;display:none}
 .clientsMob img{width:100%;display:table;vertical-align:top;-webkit-mask-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,1)),to(rgba(0,0,0,0)))}

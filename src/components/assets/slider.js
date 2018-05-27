@@ -20,6 +20,8 @@ class Slider extends Component {
                         <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
                         <li data-target="#myCarousel" data-slide-to="1"></li>
                         <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
                     </ol>                          
                     
                     <div className="carousel-inner">
@@ -44,6 +46,20 @@ class Slider extends Component {
                             <div className="carousel-caption">
                                 <h3>Trust</h3>
                                 <p>Endeavour to be worthy of our client's and our partner's trust.</p>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <img src="img/slider4.jpg" alt="New york" style={{width:'100%'}} />
+                            <div className="carousel-caption">
+                                <h3>Commitment</h3>
+                                <p>Willing to provide our time and energy for the best legal services.</p>
+                            </div>
+                        </div>
+                        <div className="item">
+                            <img src="img/slider5.jpg" alt="New york" style={{width:'100%'}} />
+                            <div className="carousel-caption">
+                                <h3>Service Excellence</h3>
+                                <p>Excellence in service is one of the core value that AP Advocates strive to exemplify through prompt, timely, thoughtful and accurate service to the clients.</p>
                             </div>
                         </div>
                     </div>          

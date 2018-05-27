@@ -4,7 +4,7 @@ import ClientImg from './img/clients1.jpg';
 class ClientMob extends Component {
     render() {
         return (
-            <article class="clientsMob" style={{display: 'block'}}>
+            <article className="clientsMob" style={{display: 'block'}}>
                 <img src={ClientImg} />
                 <h1>Clients</h1>
                 <ul>

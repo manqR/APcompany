@@ -202,7 +202,7 @@ $(function(){
                               'display' : 'block',
                               'width': '200%',
                               'height': '100%',
-                              'overflow': 'scroll'
+                              'overflow': 'scroll'                              
                         });
                        
                   }

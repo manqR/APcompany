@@ -1,8 +1,25 @@
-import React from 'react';
 
-const Practice = () => ({
-    render(){
-        return(
+
+import React, { Component } from 'react';
+
+
+
+class Practice extends Component {
+    constructor(){
+        super();
+        this.state = { data: [] };
+    };    
+
+    componentDidMount() {            
+        const BASE_URL = 'https://apadvocates.com/administrator/api/web/practice'; 
+        fetch(BASE_URL)
+        .then(response => response.json())
+        .then(json => {
+            this.setState({ data: json });                         
+        });                   
+    }
+    render() {
+        return (
             <section className="practice">
                 <table>
                     <tbody>
@@ -10,20 +27,22 @@ const Practice = () => ({
                             <td>
                                 <h1>Practice</h1>
                                 <fieldset>
-                                    <a data="practice">PRACTICE</a>
-                                    <a data="non-contentious-prosecution">NON-CONTENTIOUS (PROSECUTION)</a>
-                                    <a data="contentious-ip-litigationenforcement">CONTENTIOUS &#8211; IP LITIGATION/ENFORCEMENT</a>
-                                    <a data="technology-media-telecommunication">TECHNOLOGY, MEDIA &#038; TELECOMMUNICATION</a>
-                                    <a data="general-corporate">GENERAL CORPORATE</a>
-                                    <a data="arbitration-dispute-resolution-practice">ARBITRATION &#038; DISPUTE RESOLUTION PRACTICE</a>	    
+                                {                                    
+                                    this.state.data.map((items, i)=>{
+                                        return(
+                                            <a key ={i} data={items.link}>{items.practice.toUpperCase()}</a>
+                                        )
+                                    })
+                                }
                                 </fieldset>
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </section>
-        )
+          
+        );
     }
-})
+}
 
 export default Practice;

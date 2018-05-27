@@ -2,8 +2,33 @@ import React, { Component } from 'react';
 import Background from './img/line.png';
 
 class ClientTxt extends Component {
+
+    constructor(){
+        super();
+        this.state = { data: [] };
+    };    
+
+    
+    componentWillMount(){
+        window.RenderSlideClient();
+    }
+    componentDidMount() {            
+        const BASE_URL = 'https://apadvocates.com/administrator/api/web/client'; 
+        fetch(BASE_URL)
+        .then(response => response.json())
+        .then(json => {
+            this.setState({ data: json });  
+                     
+        });                   
+    }
+
+    
+
+    
+
     render() {
         
+       
         const styleDirection = {
             backgroundImage: `url(${Background})`
         }
@@ -18,132 +43,21 @@ class ClientTxt extends Component {
                                     <div className="bx-viewport">
                                         <ul className="bxslider" id="jb-bxslider-wrap-158">
                                             
-                                            <li className="bxslider-sitem">
-                                           
-                                                <h3 className="bxslider-item-title">
-                                                    <a href="" className="title">Cable Media</a>
-                                                </h3>   
-                                                <h4 className="bxslider-item-posted-date">
-                                                    Written on -
-                                                    Monday, 21 March 2016 06:07							  	
-                                                </h4>
-                                                <p className="bxslider-item-para">                                  	
-                                                Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.Curabitur blandit… <br/>
-                                                </p>
-                                                  
-                                            </li>
-                                            <li className="bxslider-sitem">
-                                             
-                                                <h3 className="bxslider-item-title">
-                                                    <a href="" className="title">Leading Lubricants Companies</a>
-                                                </h3>
-                                                
-                                                <h4 className="bxslider-item-posted-date">
-                                                    Written on -
-                                                    Monday, 15 February 2016 07:55							  	
-                                                </h4>
-                                              
-                                                <p className="bxslider-item-para">                                  	
-                                                Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.Curabitur blandit… <br/>
-                                                </p>
-                                                 
-                                            </li>
-                                            <li className="bxslider-sitem">
-                                              
-                                                <h3 className="bxslider-item-title">
-                                                    <a href="" className="title"> International Helmet Manufacturerx</a>
-                                                </h3>
-                                                 
-                                                <h4 className="bxslider-item-posted-date">
-                                                    Written on -
-                                                    Tuesday, 05 April 2016 16:03							  	
-                                                </h4>
+                                           { 
+                                               this.state.data.map((txt, i) =>{
+                                                return (
+                                                    <li key = {i} className="bxslider-sitem">
+                                                                               
+                                                        <h3 className="bxslider-item-title">
+                                                            <a href="" className="title">{txt.title}</a>
+                                                        </h3>  
+                                                        <p className="bxslider-item-para">{txt.description}</p>
+                                                        
+                                                    </li>
                                                
-                                                <p className="bxslider-item-para">                                  	
-                                                Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.Curabitur blandit… <br/>
-                                                </p>
-                                                  
-                                            </li>
-                                            <li className="bxslider-sitem">
-                                              
-                                                <h3 className="bxslider-item-title">
-                                                    <a href="" className="title">
-                                                    World Leading Home Furniture Company</a>
-                                                </h3>  
-                                                <h4 className="bxslider-item-posted-date">
-                                                    Written on -
-                                                    Tuesday, 05 April 2016 15:51							  	
-                                                </h4>
-                                               
-                                                <p className="bxslider-item-para">                                  	
-                                                Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.Curabitur blandit… <br/>
-                                                </p>
-                                                    
-                                            </li>
-                                            <li className="bxslider-sitem">
-                                              
-                                                <h3 className="bxslider-item-title">
-                                                    <a href="" className="title">Cable Media</a>
-                                                </h3>
-                                            
-                                                <h4 className="bxslider-item-posted-date">
-                                                    Written on -
-                                                    Monday, 21 March 2016 06:07							  	
-                                                </h4>
-                                              
-                                                <p className="bxslider-item-para">                                  	
-                                                Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.Curabitur blandit… <br/>
-                                                </p>
-                                                
-                                            </li>
-                                            <li className="bxslider-sitem">
-                                                
-                                                <h3 className="bxslider-item-title">
-                                                    <a href="" className="title">
-                                                    Leading Lubricants Companies</a>
-                                                </h3>
-                                                
-                                                <h4 className="bxslider-item-posted-date">
-                                                    Written on -
-                                                    Monday, 15 February 2016 07:55							  	
-                                                </h4>
-                                                
-                                                <p className="bxslider-item-para">                                  	
-                                                Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.Curabitur blandit… <br/>
-                                                </p>
-                                               
-                                            </li>
-                                            <li className="bxslider-sitem">
-                                                
-                                                <h3 className="bxslider-item-title">
-                                                    <a href="" className="title">
-                                                    International Helmet Manufacturer</a>
-                                                </h3>
-                                                
-                                                <h4 className="bxslider-item-posted-date">
-                                                    Written on -
-                                                    Tuesday, 05 April 2016 16:03							  	
-                                                </h4>
-                                                
-                                                <p className="bxslider-item-para">                                  	
-                                                Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.Curabitur blandit… <br/>
-                                                </p>
-                                                   
-                                            </li>
-                                            <li className="bxslider-sitem">
-                                                
-                                                <h3 className="bxslider-item-title">
-                                                    <a href="" className="title">
-                                                    World Leading Home Furniture Company</a>
-                                                </h3>
-                                                <h4 className="bxslider-item-posted-date">
-                                                    Written on -
-                                                    Tuesday, 05 April 2016 15:51							  	
-                                                </h4>
-                                                <p className="bxslider-item-para">                                  	
-                                                    Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.Curabitur blandit… <br/>
-                                                </p> 
-                                            </li>
+                                                )
+                                                })
+                                            }
                                         </ul>
                                     </div>
                                     <div className="bx-controls bx-has-controls-direction">

@@ -800,7 +800,7 @@ nav{
 |------------------------------------------------------------------------------
 */
 
-.profileMob{background:#79756f;padding:0 0 28px;width:100%;color:#fff;display:none;overflow: scroll;height: 100%;}
+.profileMob{background:#79756f;padding:0 0 28px;width:100%;color:#fff;display:none;overflow: scroll;height: 100%;-webkit-overflow-scrolling: touch}
 .profileMob img{width:100%;display:table;vertical-align:top;-webkit-mask-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,1)),to(rgba(0,0,0,0)))}
 .profileMob h2{padding:25px 25px 0;font:bold 34px/34px calibri,sans-serif;color:#fff}
 .profileMob dd{padding:25px 25px 0;font:14px/20px calibri,sans-serif;color:#fff}
@@ -818,7 +818,7 @@ nav{
 | PRACTICE MOB
 |------------------------------------------------------------------------------
 */
-.practiceMob{background:#2e2b31;padding:0 0 28px;width:200%;color:#fff;display:none;overflow: scroll;height: 100%;}
+.practiceMob{background:#2e2b31;padding:0 0 28px;width:200%;color:#fff;display:none;overflow: scroll;height: 100%;-webkit-overflow-scrolling: touch}
 .practiceMob img{width:100%;display:table;vertical-align:top;-webkit-mask-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,1)),to(rgba(0,0,0,0)))}
 .practiceMob h2{padding:25px 25px 0;font:bold 34px/34px calibri,sans-serif;color:#fff}
 .practiceMob dd{padding:25px 25px 0;font:14px/20px calibri,sans-serif;color:#fff}
@@ -835,10 +835,10 @@ nav{
 
 /*
 |------------------------------------------------------------------------------
-| PRACTICE MOB
+| NewsEvent
 |------------------------------------------------------------------------------
 */
-.newsEventMob{background:#39342f;width:100%;color:#fff;display:none}
+.newsEventMob{background:#39342f;width:100%;color:#fff;display:none; -webkit-overflow-scrolling: touch}
 .newsEventMob img{width:100%;display:table;vertical-align:top;-webkit-mask-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,1)),to(rgba(0,0,0,0)))}
 .newsEventMob h1{padding:25px;font:bold 34px/34px calibri,sans-serif}
 .newsEventMob ul{padding:0 25px 25px;width:100%;display:table}
@@ -1082,7 +1082,7 @@ header a{margin:auto;padding:15px 0;width:100%;max-width:800px;letter-spacing:0;
 .teamMob select{padding:15px;width:100%;border:3px solid;font:bold 14px sans-serif;color:#fff;display:table;border-radius:0}
 .teamMob option{color:#000}
 
-.clientsMob{background:#39342f;width:100%;color:#fff;display:none}
+.clientsMob{background:#39342f;color:#fff;display:none;overflow-y: scroll;-webkit-overflow-scrolling: touch}
 .clientsMob img{width:100%;display:table;vertical-align:top;-webkit-mask-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,1)),to(rgba(0,0,0,0)))}
 .clientsMob h1{padding:25px;font:bold 34px/34px calibri,sans-serif}
 .clientsMob ul{padding:0 25px 25px;width:100%;display:table}

@@ -1,16 +1,29 @@
 import React, { Component } from 'react';
 
 class Menu extends Component {
-    render() {
+    constructor(){
+        super();
+        this.state = { data: [] };
+    };    
+
+    componentDidMount() {            
+        const BASE_URL = 'https://apadvocates.com/administrator/api/web/menu-items'; 
+        fetch(BASE_URL)
+        .then(response => response.json())
+        .then(json => {
+            this.setState({ data: json });             
+        });                   
+    }
+
+    render() {  
+        
+        const Menus = this.state.data.map((menus, i) =>{
+            return <li key = {i} className="list-menu"><a href={menus.link}>{menus.name}</a></li>            
+        });
 
         return (
             <ul className="nav navbar-nav menu">
-                <li className="list-menu"><a href="#home">Home</a></li>
-                <li className="list-menu"><a href="#profile">Profile</a></li>
-                <li className="list-menu"><a href="#team">Our Team</a></li>
-                <li className="list-menu"><a href="#practice">Area of Practice</a></li>
-                <li className="list-menu"><a href="#clients">Clients</a></li>
-                <li className="list-menu"><a href="#news">News & Articles</a></li>                
+                { Menus }     
             </ul>
         );
     }

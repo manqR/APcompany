@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class NewsEvent extends Component {
     render() {
         return (
-            <article class="newsEventMob" style={{display: 'block'}}>                
+            <article className="newsEventMob" style={{display: 'block'}}>                
                 <h1>News</h1>
                 <ul>
                     <li>International Helmet Manufacturer</li>

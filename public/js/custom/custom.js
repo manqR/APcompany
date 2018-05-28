@@ -133,9 +133,6 @@ $(function(){
                         $('.profileMob').css({
                               'display' : 'none'
                         });
-                        $('.practiceMob').css({
-                              'display' : 'none'
-                        });
                         $('.home').css({
                               'display' : 'block'
                         });
@@ -147,85 +144,21 @@ $(function(){
                         $('.home').css({
                               'display' : 'none'
                         });
-                        $('.practiceMob').css({
-                              'display' : 'none'
-                        });
-                        $('.news').css({
-                              'display' : 'none'
-                        });
-                        $('.clientsMob').css({
-                              'display' : 'none'
-                        });
                         $('.profileMob').css({
                               'display' : 'block',
                               'width': '200%'
                         });
                        
                   }
-                  if(link == '#practice'){
+                  if(link == '#practiceMob'){
                         showLoading();
 
-                        $('.profileMob').css({
-                              'display' : 'none'
-                        });
                         $('.home').css({
                               'display' : 'none'
                         });
-                        $('.news').css({
-                              'display' : 'none'
-                        });
-                        $('.clientsMob').css({
-                              'display' : 'none'
-                        });
-                        $('.practiceMob').css({
+                        $('.profileMob').css({
                               'display' : 'block',
                               'width': '200%'
-                        });
-                       
-                  }
-                  if(link == '#clients'){
-                        showLoading();
-
-                        $('.profileMob').css({
-                              'display' : 'none'
-                        });
-                        $('.practiceMob').css({
-                              'display' : 'none',                              
-                        });
-                        $('.home').css({
-                              'display' : 'none',                              
-                        });
-                        $('.news').css({
-                              'display' : 'none',                              
-                        });
-                        $('.clientsMob').css({
-                              'display' : 'block',
-                              'width': '200%',
-                              'height': '100%',
-                              'overflow': 'scroll'                              
-                        });
-                       
-                  }
-                  if(link == '#news'){
-                        showLoading();
-
-                        $('.profileMob').css({
-                              'display' : 'none'
-                        });
-                        $('.practiceMob').css({
-                              'display' : 'none',                              
-                        });
-                        $('.home').css({
-                              'display' : 'none',                              
-                        });
-                        $('.clientsMob').css({
-                              'display' : 'none',                              
-                        });
-                        $('.newsEventMob').css({
-                              'display' : 'block',
-                              'width': '200%',
-                              'height': '100%',
-                              'overflow': 'scroll'
                         });
                        
                   }

@@ -118,52 +118,7 @@ $(function(){
             });
 
 
-            function showLoading(){
-                  $('.loading').show(0).delay(500).hide(0);
-            }
-
-            $('a').on('click' , function(){
-                  var link = $(this).attr('href');
-                  
                  
-                  if(link == '#home'){
-                       
-                        showLoading();
-
-                        $('.profileMob').css({
-                              'display' : 'none'
-                        });
-                        $('.home').css({
-                              'display' : 'block'
-                        });
-                       
-                  }
-                  if(link == '#profile'){
-                        showLoading();
-
-                        $('.home').css({
-                              'display' : 'none'
-                        });
-                        $('.profileMob').css({
-                              'display' : 'block',
-                              'width': '200%'
-                        });
-                       
-                  }
-                  if(link == '#practiceMob'){
-                        showLoading();
-
-                        $('.home').css({
-                              'display' : 'none'
-                        });
-                        $('.profileMob').css({
-                              'display' : 'block',
-                              'width': '200%'
-                        });
-                       
-                  }
-            })
-            
       }
       
 })

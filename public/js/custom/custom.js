@@ -124,7 +124,7 @@ $(function(){
 
             $('a').on('click' , function(){
                   var link = $(this).attr('href');
-
+                  
                  
                   if(link == '#home'){
                        

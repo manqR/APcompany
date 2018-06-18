@@ -5,7 +5,7 @@ class ClientMob extends Component {
     render() {
         return (
             <article className="clientsMob" style={{display: 'block'}}>
-                <img src={ClientImg} />
+                <img src={ClientImg} alt="client"/>
                 <h1>Clients</h1>
                 <ul>
                     <li>International Helmet Manufacturer</li>

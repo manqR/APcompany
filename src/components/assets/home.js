@@ -27,6 +27,10 @@ const Home = () => ({
 
         if(isMobile){                   
             profile = [<PracticeMob />,<Mobile /> ,<ClientMob/>, <NewsMob/>]
+
+            profile = profile.map(( profiles , i) =>{
+                return <li key={i}>{profiles}</li>
+            })
         }
         return(
             <div>

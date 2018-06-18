@@ -5,7 +5,7 @@ class PracticeMob extends Component {
     render() {
         return (            
             <article className="practiceMob" style={{display:'block'}}>
-                <img src={PracticeImg} />
+                <img src={PracticeImg} alt="img"/>
                 <h2>Practice</h2>
                 <dd data="practice">
                     <p>Practice</p>

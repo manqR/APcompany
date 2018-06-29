@@ -30,7 +30,13 @@ class Menu extends Component {
     render() {  
         
         const Menus = this.state.data.map((menus, i) =>{
-            return <li key = {i} className="list-menu"><a onClick={() => handleClick(menus.link)}>{menus.name}</a></li>            
+            const isMobile = window.innerWidth <= 700;
+            if(isMobile){
+                return <li key = {i} className="list-menu"><a onClick={() => handleClick(menus.link)}>{menus.name}</a></li>            
+            }else{
+                return <li key = {i} className="list-menu"><a href={menus.link}>{menus.name}</a></li>            
+            }
+            
         });
 
         return (

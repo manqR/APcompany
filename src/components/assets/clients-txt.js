@@ -12,7 +12,8 @@ class ClientTxt extends Component {
     componentWillMount(){
         window.RenderSlideClient();
     }
-    componentDidMount() {            
+    componentDidMount() {        
+        this.mounted = true;    
         const BASE_URL = 'https://apadvocates.com/administrator/api/web/client'; 
         fetch(BASE_URL)
         .then(response => response.json())
@@ -22,7 +23,9 @@ class ClientTxt extends Component {
         });                   
     }
 
-    
+    componentWillUnmount() {
+        this.mounted = false;
+    }
 
     
 

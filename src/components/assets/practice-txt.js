@@ -7,7 +7,8 @@ class PracticeTxt extends Component {
         this.state = { data: [] };
     };    
 
-    componentDidMount() {            
+    componentDidMount() {  
+        this.mounted = true;                 
         const BASE_URL = 'https://apadvocates.com/administrator/api/web/practice'; 
         fetch(BASE_URL)
         .then(response => response.json())
@@ -16,7 +17,9 @@ class PracticeTxt extends Component {
         });                   
     }
 
-    
+    componentWillUnmount() {
+        this.mounted = false;
+    }
     render() {
         const desc = this.state.data.map((descrip, i)=>{
             return  <dd key ={i} data={descrip.link} >

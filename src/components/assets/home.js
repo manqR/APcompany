@@ -28,9 +28,9 @@ const Home = () => ({
         if(isMobile){                   
             profile = [<PracticeMob />,<Mobile /> ,<ClientMob/>, <NewsMob/>]
 
-            profile = profile.map(( profiles , i) =>{
-                return <li key={i}>{profiles}</li>
-            })
+            // profile = profile.map(( profiles , i) =>{
+            //     return <li class="mediaScroll">{profiles}</li>
+            // })
         }
         return(
             <div>

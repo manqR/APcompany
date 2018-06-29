@@ -12,7 +12,8 @@ class Menu extends Component {
         this.state = { data: [] };
     };    
     
-    componentDidMount() {            
+    componentDidMount() {  
+        this.mounted = true;          
         const BASE_URL = 'https://apadvocates.com/administrator/api/web/menu-items'; 
         fetch(BASE_URL)
         .then(response => response.json())
@@ -21,12 +22,15 @@ class Menu extends Component {
         });      
                        
     }
+    componentWillUnmount() {
+        this.mounted = false;
+    }
 
     
     render() {  
         
         const Menus = this.state.data.map((menus, i) =>{
-            return <li key = {i} className="list-menu"><a href='#' onClick={() => handleClick(menus.link)}>{menus.name}</a></li>            
+            return <li key = {i} className="list-menu"><a onClick={() => handleClick(menus.link)}>{menus.name}</a></li>            
         });
 
         return (

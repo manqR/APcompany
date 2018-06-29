@@ -10,13 +10,18 @@ class Practice extends Component {
         this.state = { data: [] };
     };    
 
-    componentDidMount() {            
+    componentDidMount() {
+        this.mounted = true;            
         const BASE_URL = 'https://apadvocates.com/administrator/api/web/practice'; 
         fetch(BASE_URL)
         .then(response => response.json())
         .then(json => {
             this.setState({ data: json });                         
         });                   
+    }
+
+    componentWillUnmount() {
+        this.mounted = false;
     }
     render() {
         return (

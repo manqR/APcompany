@@ -9,8 +9,9 @@ const  handleClick = (url) => {
     LanguageClick(url);
 };
 
-let CurentUr = window.location.pathname;
-let BASE_PATH_LANG = CurentUr.replace("/", "");
+let CurentUr = window.location.href;
+let BASE_PATH_LANG = CurentUr.replace("?", "");
+    BASE_PATH_LANG = BASE_PATH_LANG.slice(-2);
 class Menu extends Component {
     constructor(){
         super();
@@ -20,14 +21,14 @@ class Menu extends Component {
 
     
     componentDidMount() {  
-                
+      //  console.log('menu lang '+BASE_PATH_LANG)
         let id = '';    
         if(BASE_PATH_LANG === ''){
             id = 'en';
         }else{
             id = BASE_PATH_LANG;
         }
-        console.log('lang  '+id)
+        //console.log('lang  '+id)
         this.mounted = true; 
         
         const BASE_URL = `https://apadvocates.com/administrator/api/menu-${id}`;

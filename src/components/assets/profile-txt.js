@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 
 
 
-let CurentUr = window.location.pathname;
-let BASE_PATH_LANG = CurentUr.replace("/", "");
+let CurentUr = window.location.href;
+let BASE_PATH_LANG = CurentUr.replace("?", "");
+    BASE_PATH_LANG = BASE_PATH_LANG.slice(-2);
 
 class ProfileTxt extends Component {
     constructor(){

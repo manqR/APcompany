@@ -37,8 +37,8 @@ const Header = () => ({
                         <ul className="nav navbar-nav navbar-right">  
                         
                                 
-                            <li style={mobLang}><a href="id"><span><img src="img/id.svg" className="language-img" alt="" /></span></a></li>
-                            <li style={mobLang}><a href="en"><span><img src="img/us.svg" className="language-img" alt="" /></span></a></li>
+                            <li style={mobLang}><a href="?id"><span><img src="img/id.svg" className="language-img" alt="" /></span></a></li>
+                            <li style={mobLang}><a href="?en"><span><img src="img/us.svg" className="language-img" alt="" /></span></a></li>
                         </ul>
                     </div>                    
                 </div>                

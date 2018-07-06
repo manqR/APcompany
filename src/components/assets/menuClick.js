@@ -6,9 +6,6 @@ function showLoading(){
     $('.loading').show(0).delay(500).hide(0);
 }
 export function menuClick(link){
-    //$('a').on('click' , function(){
-  //var link = $(this).attr('href');
-    
     if(link === '#home'){
                         
         showLoading();

@@ -1,14 +1,25 @@
 import React, { Component } from 'react';
 
+
+
+let CurentUr = window.location.pathname;
+let BASE_PATH_LANG = CurentUr.replace("/", "");
+
 class ProfileTxt extends Component {
     constructor(){
         super();
         this.state = { data: [] };
     };    
 
-    componentDidMount() {    
+    componentDidMount() {   
+        let id = '';    
+        if(BASE_PATH_LANG === ''){
+            id = 'en';
+        }else{
+            id = BASE_PATH_LANG;
+        }
         this.mounted = true;       
-        const BASE_URL = 'https://apadvocates.com/administrator/api/web/profile'; 
+        const BASE_URL = `https://apadvocates.com/administrator/api/profile-${id}`; 
         fetch(BASE_URL)
         .then(response => response.json())
         .then(json => {

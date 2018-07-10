@@ -21,12 +21,12 @@ class Menu extends Component {
 
     
     componentDidMount() {  
-      //  console.log('menu lang '+BASE_PATH_LANG)
+     //  console.log('menu lang '+BASE_PATH_LANG)
         let id = '';    
-        if(BASE_PATH_LANG === ''){
-            id = 'en';
-        }else{
+        if(BASE_PATH_LANG === 'en' || BASE_PATH_LANG === 'id'){
             id = BASE_PATH_LANG;
+        }else{
+            id='en'
         }
         //console.log('lang  '+id)
         this.mounted = true; 

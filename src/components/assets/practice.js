@@ -3,6 +3,9 @@
 import React, { Component } from 'react';
 
 
+let CurentUr = window.location.href;
+let BASE_PATH_LANG = CurentUr.replace("?", "");
+    BASE_PATH_LANG = BASE_PATH_LANG.slice(-2);
 
 class Practice extends Component {
     constructor(){
@@ -11,8 +14,14 @@ class Practice extends Component {
     };    
 
     componentDidMount() {
+        let id = '';    
+        if(BASE_PATH_LANG === 'en' || BASE_PATH_LANG === 'id'){
+            id = BASE_PATH_LANG;
+        }else{
+            id='en'
+        }
         this.mounted = true;            
-        const BASE_URL = 'https://apadvocates.com/administrator/api/web/practice'; 
+        const BASE_URL = `https://apadvocates.com/administrator/api/practice-${id}`;
         fetch(BASE_URL)
         .then(response => response.json())
         .then(json => {
@@ -24,6 +33,8 @@ class Practice extends Component {
         this.mounted = false;
     }
     render() {
+       
+
         return (
             <section className="practice">
                 <table>
@@ -34,8 +45,15 @@ class Practice extends Component {
                                 <fieldset>
                                 {                                    
                                     this.state.data.map((items, i)=>{
+                                        let cls = '';
+
+                                        if(items.link === 'practice'){
+                                            cls='active'
+                                        }else{
+                                            cls=''
+                                        }
                                         return(
-                                            <a key ={i} data={items.link}>{items.practice.toUpperCase()}</a>
+                                            <a key ={i} data={items.link} className={cls}>{items.practice.toUpperCase()}</a>
                                         )
                                     })
                                 }

@@ -23,7 +23,7 @@ const Home = () => ({
         const isMobile = window.innerWidth <= 700;
         let profile = [];
         let url = window.location.href.split('#');
-        console.log(url[1]);
+      //  console.log(url[1]);
 
         if(isMobile){                   
             profile = [<PracticeMob />,<Mobile /> ,<ClientMob/>, <NewsMob/>]

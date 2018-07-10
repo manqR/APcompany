@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import Background from './img/line.png';
 
+
+let CurentUr = window.location.href;
+let BASE_PATH_LANG = CurentUr.replace("?", "");
+    BASE_PATH_LANG = BASE_PATH_LANG.slice(-2);
+
 class ClientTxt extends Component {
 
     constructor(){
         super();
-        this.state = { data: [] };
+        this.state = { data: '' };
     };    
 
     
@@ -13,12 +18,20 @@ class ClientTxt extends Component {
         window.RenderSlideClient();
     }
     componentDidMount() {        
+        let id = '';    
+        if(BASE_PATH_LANG === 'en' || BASE_PATH_LANG === 'id'){
+            id = BASE_PATH_LANG;
+        }else{
+            id='en'
+        }
+
+
         this.mounted = true;    
-        const BASE_URL = 'https://apadvocates.com/administrator/api/web/client'; 
+        const BASE_URL = `https://apadvocates.com/administrator/api/clients-${id}`; 
         fetch(BASE_URL)
         .then(response => response.json())
         .then(json => {
-            this.setState({ data: json });  
+            this.setState({ data: json[0].description });  
                      
         });                   
     }
@@ -36,6 +49,9 @@ class ClientTxt extends Component {
             backgroundImage: `url(${Background})`
         }
        
+        let clientText = this.state.data;        
+        function createMarkup() { return {__html: clientText.toUpperCase()}; };
+
         return (
             <section className="clients2">
                 <div className="row" style={{marginTop:'1vw'}}>
@@ -44,7 +60,8 @@ class ClientTxt extends Component {
                             <div className="textrotate">
                                 <div className="bx-wrapper">
                                     <div className="bx-viewport">
-                                        <ul className="bxslider" id="jb-bxslider-wrap-158">
+                                        <div dangerouslySetInnerHTML={createMarkup()} />            
+                                        {/* <ul className="bxslider" id="jb-bxslider-wrap-158">
                                             
                                            { 
                                                this.state.data.map((txt, i) =>{
@@ -61,11 +78,11 @@ class ClientTxt extends Component {
                                                 )
                                                 })
                                             }
-                                        </ul>
+                                        </ul> */}
                                     </div>
-                                    <div className="bx-controls bx-has-controls-direction">
+                                    {/* <div className="bx-controls bx-has-controls-direction">
                                         <div className="bx-controls-direction" style={styleDirection}></div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         

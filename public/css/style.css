@@ -26,6 +26,7 @@
     list-style:none;
     resize:none;
     box-sizing:border-box;
+    font-family: "Verdana, Geneva, sans-serif";
     -webkit-tap-highlight-color:rgba(0,0,0,0)
 }
 *::-webkit-scrollbar{width:6px}
@@ -319,7 +320,8 @@ nav{
     opacity:1
 }
  .practice2 p, .practice2 li{
-    display:none
+    display:none;
+    font-size:12px;
 }
  .practice2 dd.active p{
     padding:0 0 15px;
@@ -494,14 +496,15 @@ nav{
     display:table-cell
 }
  .clients2 ul{
-    margin:auto;
-    padding:0 40px 30px;
+    /* margin:auto; */
+    /* padding:0 40px 30px; */
     font:bold 13px/22px calibri,sans-serif;
     color:#fff;
     display:table
 }
  .clients2 li{
     margin:15px 0 0 20px;
+    width: 200%;
 }
 
 

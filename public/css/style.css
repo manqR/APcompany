@@ -26,7 +26,7 @@
     list-style:none;
     resize:none;
     box-sizing:border-box;
-    font-family: "Verdana, Geneva, sans-serif";
+    font-family: "Arial, Helvetica, sans-serif";
     -webkit-tap-highlight-color:rgba(0,0,0,0)
 }
 *::-webkit-scrollbar{width:6px}
@@ -1091,7 +1091,7 @@ header a{margin:auto;padding:15px 0;width:100%;max-width:800px;letter-spacing:0;
 .clientsMob img{width:100%;display:table;vertical-align:top;-webkit-mask-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,1)),to(rgba(0,0,0,0)))}
 .clientsMob h1{padding:25px;font:bold 34px/34px calibri,sans-serif}
 .clientsMob ul{padding:0 25px 25px;width:100%;display:table}
-.clientsMob li{margin:0 0 20px 15px;font:bold 14px/20px calibri,sans-serif;list-style:square}
+.clientsMob li{margin:0 0 20px 15px;font:bold 14px/20px calibri,sans-serif;list-style:square;width: 88%;}
 
 .newsMob{background:url(../img/sierra1.jpg)center/cover no-repeat #444;padding:25px;width:100%;color:#fff;text-align:center;display:none}
 .newsMob h1{padding:0 0 20px;font:bold 34px/34px calibri,sans-serif}

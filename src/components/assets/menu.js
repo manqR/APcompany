@@ -6,7 +6,7 @@ import { LanguageClick } from "./multilanguage";
 
 
 const  handleClick = (url) => {
-    LanguageClick(url);
+    menuClick(url);
 };
 
 let CurentUr = window.location.href;

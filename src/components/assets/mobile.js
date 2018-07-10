@@ -1,21 +1,54 @@
 import React, { Component } from 'react';
 import ProfilePict from './img/profile.jpg';
 
+
+
+let CurentUr = window.location.href;
+let BASE_PATH_LANG = CurentUr.replace("?", "");
+    BASE_PATH_LANG = BASE_PATH_LANG.slice(-2);
+
 class mobile extends Component {
+
+    constructor(){
+        super();
+        this.state = { data: '' };
+    };    
+
+    componentDidMount() {   
+        let id = '';    
+        if(BASE_PATH_LANG === 'en' || BASE_PATH_LANG === 'id'){
+            id = BASE_PATH_LANG;
+        }else{
+            id='en'
+        }
+        
+        this.mounted = true;       
+        const BASE_URL = `https://apadvocates.com/administrator/api/profile-${id}`; 
+        fetch(BASE_URL)
+        .then(response => response.json())
+        .then(json => {
+            this.setState({ data: json[0].description}); 
+                    
+        });                   
+    }
+
+    componentWillUnmount() {
+        this.mounted = false;
+       
+    }
+
     render() {
         const styleText ={
             textAlign: 'justify'
         }
+        let profileText = '<h5>'+this.state.data+'</h5>';        
+        function createMarkup() { return {__html: profileText}; };
+
         return (
             <article className="profileMob" style={{display: 'block'}}>
-                <img src={ProfilePict} alt="profile"/>
-                <h2>Profile</h2>
+                <img src={ProfilePict} alt="profile"/>                
                 <dd data="who-we-are">
-                    <h1>1. Who We Are</h1>
-                    <div>
-                    <h5 style={styleText}>We are a law firm domiciled in Central Jakarta-Indonesia that specialized in corporate and commercial legal services as well as litigation and non-litigation services in Indonesian law. </h5>
-                    <h5 style={styleText}>All partners, associates, and lawyers are graduates of the Indonesian Law Faculties and are qualified to practice law in Indonesia, as continuously seeks to develop the legal and specialized. skills of the lawyers by participating any legal professional development program or courses, in order to sharpen their legal skill and industries expertise. Through the collective expertise and wealth of experience of our partner, associates and lawyers, we ensure to provide the most appropriate legal solutions adjusted to its clients’ circumstances.</h5>
-                    </div>                    
+                    <div dangerouslySetInnerHTML={createMarkup()} />            
                 </dd>               
             </article>
         );

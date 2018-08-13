@@ -575,7 +575,7 @@ nav{
     font:13px/22px calibri,sans-serif;
     float:left;
     position:relative;
-    display:none
+    /* display:none */
 }
  .news-articles fieldset span:before{
     content:'';
@@ -754,7 +754,8 @@ nav{
     height:100%;
     color:#fff;
     text-align:center;
-    display:table
+    display:table;
+    margin:5px;
 }
  .team span{
     background:rgba(0,0,0,.2);
@@ -848,6 +849,17 @@ nav{
 .newsEventMob h1{padding:25px;font:bold 34px/34px calibri,sans-serif}
 .newsEventMob ul{padding:0 25px 25px;width:100%;display:table}
 .newsEventMob li{margin:0 0 20px 15px;font:bold 14px/20px calibri,sans-serif;list-style:square}
+
+/*
+|------------------------------------------------------------------------------
+| TeamMobile
+|------------------------------------------------------------------------------
+*/
+.teamMob{background:#39342f;width:200%;height:100%;padding-top: 20px;color:#fff;display:none; -webkit-overflow-scrolling: touch}
+.teamMob img{width:100%;display:table;vertical-align:top;-webkit-mask-image:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,1)),to(rgba(0,0,0,0)))}
+.teamMob h1{padding:25px;font:bold 34px/34px calibri,sans-serif}
+.teamMob ul{padding:0 25px 25px;width:100%;display:table}
+.teamMob li{margin:0 0 20px 15px;font:bold 14px/20px calibri,sans-serif;list-style:square}
 
 
 
@@ -962,38 +974,6 @@ header a{margin:auto;padding:15px 0;width:100%;max-width:800px;letter-spacing:0;
 .achievement2 li{margin:15px 0 0 20px;list-style-type:square}
 
 
-
-.team span.raniya-ockvalynie:before{background:url(../img/raniya-ockvalynie1.jpg)center/contain no-repeat,url(../img/raniya-ockvalynie1b.jpg)center/cover no-repeat}
-.team span.fortuna-alvariza:before{background:url(../img/fortuna-alvariza1.jpg)center/contain no-repeat,url(../img/fortuna-alvariza1b.jpg)center/cover no-repeat}
-.team span.bintang-leo-naibaho:before{background:url(../img/bintang-leo-naibaho1.jpg)center/contain no-repeat,url(../img/bintang-leo-naibaho1b.jpg)center/cover no-repeat}
-.team span.rizka-khairunnisa:before{background:url(../img/rizka-khairunnisa1.jpg)center/contain no-repeat,url(../img/rizka-khairunnisa1b.jpg)center/cover no-repeat}
-.team span.adelina-handayani:before{background:url(../img/adelina-handayani1.jpg)center/contain no-repeat,url(../img/adelina-handayani1b.jpg)center/cover no-repeat}
-.team span.rizka-fakhirah:before{background:url(../img/rizka-fakhirah1.jpg)center/contain no-repeat,url(../img/rizka-fakhirah1b.jpg)center/cover no-repeat}
-
-.team span.justisiari-p-kusumah:before{background:url(../img/justisiari-p-kusumah1.jpg)center/contain no-repeat,url(../img/justisiari-p-kusumah1b.jpg)center/cover no-repeat}
-.team span.risti-wulansari:before{background:url(../img/risti-wulansari1.jpg)center/contain no-repeat,url(../img/risti-wulansari1b.jpg)center/cover no-repeat}
-.team span.wardaya:before{background:url(../img/wardaya1.jpg)center/contain no-repeat,url(../img/wardaya1b.jpg)center/cover no-repeat}
-.team span.lukman-hakim-basir:before{background:url(../img/lukman-hakim-basir1.jpg)center/contain no-repeat,url(../img/lukman-hakim-basir1b.jpg)center/cover no-repeat}
-.team span.fajar-budiman-kusumo:before{background:url(../img/fajar-budiman-kusumo1.jpg)center/contain no-repeat,url(../img/fajar-budiman-kusumo1b.jpg)center/cover no-repeat}
-.team span.elsiana-inda-putri-maharani:before{background:url(../img/elsiana-inda-putri-maharani1.jpg)center/contain no-repeat,url(../img/elsiana-inda-putri-maharani1b.jpg)center/cover no-repeat}
-.team span.danny-kobrata:before{background:url(../img/danny-kobrata1.jpg)center/contain no-repeat,url(../img/danny-kobrata1b.jpg)center/cover no-repeat}
-.team span.ratu-aurora:before{background:url(../img/ratu-aurora1.jpg)center/contain no-repeat,url(../img/ratu-aurora1b.jpg)center/cover no-repeat}
-.team span.rizkiandini-kusumawardhani:before{background:url(../img/rizkiandini-kusumawardhani1.jpg)center/contain no-repeat,url(../img/rizkiandini-kusumawardhani1b.jpg)center/cover no-repeat}
-.team span.siti-mariam-nabila:before{background:url(../img/siti-mariam-nabila1.jpg)center/contain no-repeat,url(../img/siti-mariam-nabila1b.jpg)center/cover no-repeat}
-.team span.eka-putra-apriliansyah:before{background:url(../img/eka-putra-apriliansyah1.jpg)center/contain no-repeat,url(../img/eka-putra-apriliansyah1b.jpg)center/cover no-repeat}
-.team span.bhredipta-cresti-socarana:before{background:url(../img/bhredipta-cresti-socarana1.jpg)center/contain no-repeat,url(../img/bhredipta-cresti-socarana1b.jpg)center/cover no-repeat}
-.team span.adrian-lutfi-imantaka:before{background:url(../img/adrian-lutfi-imantaka1.jpg)center/contain no-repeat,url(../img/adrian-lutfi-imantaka1b.jpg)center/cover no-repeat}
-.team span.yunita-puspasari:before{background:url(../img/yunita-puspasari1.jpg)center/contain no-repeat,url(../img/yunita-puspasari1b.jpg)center/cover no-repeat}
-.team span.lusiana-ayu-mayansari:before{background:url(../img/lusiana-ayu-mayansari1.jpg)center/contain no-repeat,url(../img/lusiana-ayu-mayansari1b.jpg)center/cover no-repeat}
-.team span.nugraha-brata-kusumah:before{background:url(../img/nugraha-brata-kusumah1.jpg)center/contain no-repeat,url(../img/nugraha-brata-kusumah1b.jpg)center/cover no-repeat}
-.team span.somnis-ferina:before{background:url(../img/somnis-ferina1.jpg)center/contain no-repeat,url(../img/somnis-ferina1b.jpg)center/cover no-repeat}
-.team span.denni-koswara:before,
-.team span.marisca-dwi-putri:before,
-.team span.radita-indrayani:before,
-.team span.putri-kemalasari:before{background:url(../img/general-affairs-finance1.jpg)center/contain no-repeat,url(../img/general-affairs-finance1b.jpg)center/cover no-repeat}
-.team span.retno-budi-setianingsih:before,
-.team span.ulfi-chaerunnisa:before,
-.team span.febriany-yusuf:before{background:url(../img/secretary1.jpg)center/contain no-repeat,url(../img/secretary1b.jpg)center/cover no-repeat}
 .team span:hover:before{transform:scale3d(1.1,1.1,1.1)}
 .team h1{margin:0 auto 10px;padding:0 0 10px;font:bold 16px calibri,sans-serif;border-bottom:2px solid;display:table}
 .team h2{padding:0 40px;font:13px/18px calibri,sans-serif}

@@ -53,7 +53,7 @@ class Menu extends Component {
                 
                 return <li key = {i} className="list-menu"><a onClick={() => handleClick(menus.link)}>{menus.name}</a></li>            
             }else{
-                return <li key = {i} className="list-menu"><a href={menus.link} onClick={() => handleClick(menus.link)}>{menus.name}</a></li>            
+                return <li key = {i} className="list-menu"><a href={menus.link} >{menus.name}</a></li>            
             }
             
         });

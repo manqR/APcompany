@@ -19,6 +19,9 @@ export function menuClick(link){
         $('.home').css({
             'display' : 'block'
         });
+        $('.teamMob').css({
+            'display' : 'none'
+        });
     
     }
     if(link === '#profile'){
@@ -36,7 +39,38 @@ export function menuClick(link){
         $('.clientsMob').css({
             'display' : 'none'
         });
+        $('.teamMob').css({
+            'display' : 'none'
+        });
         $('.profileMob').css({
+            'display' : 'block',
+            'width': '200%'
+        });
+    
+    }
+    console.log(link)
+    if(link === '#team'){
+        showLoading();
+
+        $('.home').css({
+            'display' : 'none'
+        });
+        $('.practiceMob').css({
+            'display' : 'none'
+        });
+        $('.news').css({
+            'display' : 'none'
+        });
+        $('.clientsMob').css({
+            'display' : 'none'
+        });
+        $('.profileMob').css({
+            'display' : 'none'
+        });
+        $('.newsEventMob').css({
+            'display' : 'none'
+        });
+        $('.teamMob').css({
             'display' : 'block',
             'width': '200%'
         });
@@ -55,6 +89,9 @@ export function menuClick(link){
             'display' : 'none'
         });
         $('.clientsMob').css({
+            'display' : 'none'
+        });
+        $('.teamMob').css({
             'display' : 'none'
         });
         $('.practiceMob').css({
@@ -78,6 +115,9 @@ export function menuClick(link){
         $('.news').css({
             'display' : 'none',                              
         });
+        $('.teamMob').css({
+            'display' : 'none'
+        });
         $('.clientsMob').css({
             'display' : 'block',
             'width': '200%',
@@ -100,6 +140,9 @@ export function menuClick(link){
         });
         $('.clientsMob').css({
             'display' : 'none',                              
+        });
+        $('.teamMob').css({
+            'display' : 'none'
         });
         $('.newsEventMob').css({
             'display' : 'block',

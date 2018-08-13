@@ -15,6 +15,7 @@ import Articles from './articles';
 import Mobile from './mobile';
 import PracticeMob from './practiceMob';
 import ClientMob from './clientMob';
+import TeamMob from './teamMob';
 import NewsMob from './newsMob';
 
 
@@ -26,7 +27,7 @@ const Home = () => ({
       //  console.log(url[1]);
 
         if(isMobile){                   
-            profile = [<PracticeMob />,<Mobile /> ,<ClientMob/>, <NewsMob/>]
+            profile = [<PracticeMob />,<Mobile />, <TeamMob/>,<ClientMob/>, <NewsMob/>]
 
             // profile = profile.map(( profiles , i) =>{
             //     return <li class="mediaScroll">{profiles}</li>

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import logo from './img/logo2.png';
+import {TeamView} from './teamView';
+
 class TeamTxt extends Component {
     render() {
 
@@ -14,30 +16,30 @@ class TeamTxt extends Component {
                 <span>
                     <span>
                         <div style={styleTeam}>
-                            {/* <a  data="apadvocates" style={{border: '0px solid'}}><img src={ logo } alt="logo" style={{width:'8vw'}}/></a> */}
-                            <img src={ logo } alt="logo" style={{width:'8vw',height:'6vw',border: '0px solid'}}/>
+                            <a  data="apadvocates" style={{border: '0px solid'}}><img src={ logo } alt="logo" style={{width:'8vw'}}/></a>
+                            {/* <img src={ logo } alt="logo" style={{width:'8vw',height:'6vw',border: '0px solid'}}/> */}
                             {/* <a  data="apconsultant" style={{border: '0px solid'}}><img src={ logo } alt="logo" style={{width:'8vw'}}/></a> */}
                         </div>
 
 
-                        {/* <aside data="apadvocates" id="apadvocates">
+                        <aside data="apadvocates" id="apadvocates">
 
-                            <dd data="justisiari-p-kusumah" color="#453a34">
+                            <dd data="apadvocates-partner" color="#453a34" onClick={() => TeamView('Partner')}>
                                 <span>
                                     <span>
                                         <h1>Partner</h1>
                                     </span>
                                 </span>
                             </dd>
-                            <dd data="" color="#3b2516">
+                            <dd data="apadvocates-associate" color="#3b2516"  onClick={() => TeamView('Associate')}>
                                 <span>
                                     <span>
-                                        <h1>Our Team</h1>
+                                        <h1>Associate</h1>
                                     </span>
                                 </span>
                             </dd>    
 
-                        </aside> */}
+                        </aside>
 
 
                         {/* <aside data="apconsultant" id="apconsultant">

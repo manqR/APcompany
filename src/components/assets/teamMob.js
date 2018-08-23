@@ -8,11 +8,14 @@ class TeamMob extends Component {
         return (  
             
             <article className="teamMob" style={{display: 'block'}}>                          
-                <h1>Our Team</h1>
+                <h1>Partner</h1>
                 <ul>
-                    <li>Amir Rahmat Akbar Pane, SH</li>
-                    <li>Aldi Andhika Jusuf, SH., MH</li>
-                    <li>Rico Ricardo, SH</li>
+                    <li>Amir Rahmat Akbar Pane, SH (<i> Managing Partner</i>)</li>
+                    <li>Aldi Andhika Jusuf, SH., MH (<i >Partner</i>)</li>                    
+                </ul>
+                <h1>Associate</h1>
+                <ul>
+                    <li>Rico Ricardo, SH (<i> Associate</i>)</li>                                        
                 </ul>
             </article>
 

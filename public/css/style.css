@@ -758,10 +758,10 @@ nav{
     margin:5px;
 }
  .team span{
-    background:rgba(0,0,0,.2);
+    /* background:rgba(0,0,0,.2); */
     padding:35px;
     vertical-align:bottom;
-    display:table-cell
+    /* display:table-cell */
 }
  .team span:before{
     content:'';

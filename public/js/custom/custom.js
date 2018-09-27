@@ -9,7 +9,7 @@ $(function(){
             sectionSelector:'section',
             leftSelector:'article:first',
             rightSelector:'article:last',
-            anchors:['home','profile','team','practice','clients','news'],
+            anchors:['home','profile','team','practice','clients','news','contact'],
             normalScrollElements:'nav,.contact form,.profile2 div,.achievement2 div,.team2 div,.practice2 div,.clients2 div,.news-articles div'
 		})
 
@@ -32,7 +32,7 @@ $(function(){
             $('.team h2').empty()
             $('.team span').removeClass().addClass($(this).attr('data'))
             $('.team2 div').css('background',$(this).attr('color'))
-            console.log('klik'+$(this).attr('data'));
+            // console.log('klik'+$(this).attr('data'));
             if($(this).attr('data') == 'apadvocates'){
                   $('#apadvocates').css({
                         'display' : 'flex',

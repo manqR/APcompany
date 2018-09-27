@@ -17,6 +17,9 @@ import PracticeMob from './practiceMob';
 import ClientMob from './clientMob';
 import TeamMob from './teamMob';
 import NewsMob from './newsMob';
+import ContactMob from './contactMob';
+import Contact from './contact';
+import ContactTxt from './contact-txt';
 
 
 const Home = () => ({
@@ -27,7 +30,7 @@ const Home = () => ({
       //  console.log(url[1]);
 
         if(isMobile){                   
-            profile = [<PracticeMob />,<Mobile />, <TeamMob/>,<ClientMob/>, <NewsMob/>]
+            profile = [<PracticeMob />,<Mobile />, <TeamMob/>,<ClientMob/>, <NewsMob/>, <ContactMob />]
 
             // profile = profile.map(( profiles , i) =>{
             //     return <li class="mediaScroll">{profiles}</li>
@@ -55,6 +58,7 @@ const Home = () => ({
                     <Clients />
 
                     <News />
+                    <Contact />
                     
                 </article>
                 {/* END LEFT SIDE PRATICE */}
@@ -79,6 +83,8 @@ const Home = () => ({
                     <ClientsTxt />
                     
                     <Articles />
+
+                    <ContactTxt />
                 </article>
                 {/* END RIGHT SIDE PRATICE */}
 

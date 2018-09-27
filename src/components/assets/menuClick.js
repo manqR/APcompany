@@ -19,6 +19,9 @@ export function menuClick(link){
         $('.home').css({
             'display' : 'block'
         });
+        $('.contactMob').css({
+            'display' : 'none'
+        });
         $('.teamMob').css({
             'display' : 'none'
         });
@@ -42,13 +45,16 @@ export function menuClick(link){
         $('.teamMob').css({
             'display' : 'none'
         });
+        $('.contactMob').css({
+            'display' : 'none'
+        });
         $('.profileMob').css({
             'display' : 'block',
             'width': '200%'
         });
     
     }
-    console.log(link)
+    // console.log(link)
     if(link === '#team'){
         showLoading();
 
@@ -68,6 +74,9 @@ export function menuClick(link){
             'display' : 'none'
         });
         $('.newsEventMob').css({
+            'display' : 'none'
+        });
+        $('.contactMob').css({
             'display' : 'none'
         });
         $('.teamMob').css({
@@ -94,6 +103,9 @@ export function menuClick(link){
         $('.teamMob').css({
             'display' : 'none'
         });
+        $('.contactMob').css({
+            'display' : 'none'
+        });
         $('.practiceMob').css({
             'display' : 'block',
             'width': '200%'
@@ -116,6 +128,9 @@ export function menuClick(link){
             'display' : 'none',                              
         });
         $('.teamMob').css({
+            'display' : 'none'
+        });
+        $('.contactMob').css({
             'display' : 'none'
         });
         $('.clientsMob').css({
@@ -144,7 +159,39 @@ export function menuClick(link){
         $('.teamMob').css({
             'display' : 'none'
         });
+        $('.contactMob').css({
+            'display' : 'none'
+        });
         $('.newsEventMob').css({
+            'display' : 'block',
+            'width': '200%',
+            'height': '100%',
+            'overflow': 'scroll'
+        });
+    
+    }
+    if(link === '#contact'){
+        showLoading();
+
+        $('.profileMob').css({
+            'display' : 'none'
+        });
+        $('.practiceMob').css({
+            'display' : 'none',                              
+        });
+        $('.home').css({
+            'display' : 'none',                              
+        });
+        $('.clientsMob').css({
+            'display' : 'none',                              
+        });
+        $('.teamMob').css({
+            'display' : 'none'
+        });
+        $('.newsEventMob').css({
+            'display' : 'none'
+        });
+        $('.contactMob').css({
             'display' : 'block',
             'width': '200%',
             'height': '100%',

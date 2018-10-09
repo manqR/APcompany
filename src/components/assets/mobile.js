@@ -38,9 +38,9 @@ class mobile extends Component {
     }
 
     render() {
-        const styleText ={
-            textAlign: 'justify'
-        }
+        // const styleText ={
+        //     textAlign: 'justify'
+        // }
         let profileText = '<h5>'+this.state.data+'</h5>';        
         function createMarkup() { return {__html: profileText}; };
 

@@ -117,6 +117,15 @@ $(function(){
                 });
             });
             
+            $(document).ready(function() {
+                  var callFunction = true;
+                  $(window).scroll(function() {
+                    if ( callFunction && $(window).scrollTop() + $(window).height() == $(document).height() ) {
+                      myfunctionCall();
+                      callFunction = false;
+                    }
+                  })
+            })
       }
       
 })

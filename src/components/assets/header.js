@@ -1,6 +1,5 @@
 import React from "react";
 import logo from './img/logo2.png';
-import {LanguageClick} from './multilanguage'
 import Menu from './menu';
 
 

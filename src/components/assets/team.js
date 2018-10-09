@@ -1,6 +1,6 @@
 
 import React from 'react';
-import logo from './img/logo2.png';
+// import logo from './img/logo2.png';
 
 const Team = () => ({
     render(){

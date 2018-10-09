@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Background from './img/line.png';
+import axios from 'axios';
 
 
 class Contact extends Component {
@@ -25,26 +26,58 @@ class Contact extends Component {
         this.setState(store);
     }
 
+    serialize = obj => {
+        let str = [];
+        for (let p in obj)
+          if (obj.hasOwnProperty(p)) {
+            str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+          }
+        return str.join("&");
+    };
+
     submitHandler(e) { 
         e.preventDefault();
 
-        fetch("https://apadvocates.com/administrator/api/email", {
-        method: "post",
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-        },
+     
 
-        //make sure to serialize your JSON body
-        body: JSON.stringify({
-                nama:this.state.form.nama,
+        axios('https://apadvocates.com/administrator/api/email', {
+            method: "POST",
+            headers: {
+              Accept: "application/json",
+                      "Content-Type": "application/x-www-form-urlencoded"
+            },
+            data: this.serialize({
+                nama: this.state.form.nama,
                 email: this.state.form.email,
                 subject: this.state.form.subject,
-                body: this.state.form.body,
+                body: this.state.form.body
             })
-        }).then( (response) => { 
-            // console.log(response)
+        }).then(response => {
+            // console.log(response);
+        }).catch(error => {
+            console.log(error.response);
         });
+
+        
+           
+
+        // fetch("https://apadvocates.com/administrator/api/email", {
+        // method: "post",
+        // headers: {
+        //     'Accept': 'application/x-www-form-urlencoded',
+        //     'Content-Type': 'application/x-www-form-urlencoded'
+        // },
+
+        // //make sure to serialize your JSON body
+        // body: JSON.stringify({
+        //         nama:this.state.form.nama,
+        //         email: this.state.form.email,
+        //         subject: this.state.form.subject,
+        //         body: this.state.form.body,
+        //     })
+        // }).then( (response) => { 
+        //      console.log(response)
+        // });
 
 
         // fetch('https://apadvocates.com/administrator/api/email',

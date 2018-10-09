@@ -45,9 +45,9 @@ class ClientTxt extends Component {
     render() {
         
        
-        const styleDirection = {
-            backgroundImage: `url(${Background})`
-        }
+        // const styleDirection = {
+        //     backgroundImage: `url(${Background})`
+        // }
        
         let clientText = this.state.data;        
         function createMarkup() { return {__html: clientText.toUpperCase()}; };

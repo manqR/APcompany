@@ -11,7 +11,7 @@ class TeamMob extends Component {
                 <h1>Partner</h1>
                 <ul>
                     <li>Amir Rahmat Akbar Pane, SH (<i> Managing Partner</i>)</li>
-                    <li>Aldi Andhika Jusuf, SH., MH (<i >Partner</i>)</li>                    
+                    {/* <li>Aldi Andhika Jusuf, SH., MH (<i >Partner</i>)</li>                     */}
                 </ul>
                 <h1>Associate</h1>
                 <ul>

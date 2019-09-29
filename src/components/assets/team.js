@@ -37,13 +37,13 @@ const Team = () => ({
                             <i className="partner" style={styleDisplay}> Managing Partner</i>                        
                               
                     </dd>
-                    <dd className="partner">                        
+                    {/* <dd className="partner">                        
                         <span>
                             <h1 className="partner" style={styleDisplay}>Aldi Andhika Jusuf, SH., MH.</h1>
                         </span>  
                         <i className="partner" style={styleDisplay}>Partner</i>
                                                   
-                    </dd>    
+                    </dd>     */}
                     <dd data="apadvocates-associate" className="associate" style={styleDisplay}>                       
                         <span>
                             <h1  className="associate" style={styleDisplay}>Rico Ricardo, SH.&nbsp;&nbsp;&nbsp;<br/>&nbsp;&nbsp;&nbsp;</h1>                            
